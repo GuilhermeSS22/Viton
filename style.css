@@ -1,0 +1,123 @@
+body {
+    background-image: url(imagens/fundao.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+    background-color: #010c22;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    color: #d32323;
+}
+
+/* Barra de navegação */
+.nava {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.7);
+    border-radius: 1%;
+    border: #F3143F;
+    box-shadow: 0px 2px 13px #F3143F;
+    position:fixed;
+    width: 1100px;
+    z-index: 10;
+    
+}
+
+li {
+    float: left;
+    border-right: 1px solid #990101;
+}
+
+li a {
+    display: block;
+    background-color: rgba(0,0,0,0.7);
+    color: #990101;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover {
+    background-color: #990101;
+    color:#dddddd;
+    border-right: #0c0c0c;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    background-color: #0c0c0c;
+}
+li:last-child {
+    border-right: none;
+}
+.active {
+    background-color: #990101;
+    color:rgb(255, 255, 255)
+}
+
+.active:hover {
+    background-color: #990101;
+}
+
+/* início */
+
+.campinho {
+    background-color: rgba(0,0,0,0.7);
+    margin-left: 100px;
+    margin-right: 100px;
+    Color: rgb(255, 255, 255);
+    border: #990101 solid 1px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 13px #990101;
+}
+
+
+h2 {
+    color:#d32323;
+    text-align: center;
+    font-size: 40px;
+}
+
+.subtitulo {
+    text-align: center;
+    font-size: 20px;
+    color: #f31469;
+    text-shadow: #f31469 1px 1px 10px;
+}
+
+.subnav {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 150px;
+}
+
+.subnav li {
+    position: relative;
+    }
+
+    .subnav li a {
+        display: block;
+        text-decoration: none;
+        font-size: 12px;
+        padding: 5px;
+       
+     }
+
+    li .subnav {
+        position: absolute;
+        display: none
+        }
+        li:hover .subnav { display: block; }
+        
