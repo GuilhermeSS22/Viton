@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mecanicas</title>
+  <link rel="stylesheet" href="codice.css">
+</head>
+<body>
+  <br>
+  <br>
+  <ul class="nav">
+    <li><a class="nava" href="index.html">Início</a></li>
+    <li><a class="nava" href="fichakawee.html">Ficha</a></li>
+    <li><a class="nava" href="contact.asp">Mesa</a></li>
+    <li style="float:right"><a href="codice.html" class="active">Códice</a></li>
+    <li><a class="nava" href="about.asp">Mapa</a></li>
+    <li><a class="nava" href="about.asp">Lojas</a></li>
+    <li><a class="nava" href="about.asp">Jornal</a></li>
+  </ul>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <fieldset class="field1">
+    <h1>Códice</h1>
+<h2>Mecânicas</h2>
+<img class="luna" src="imagens/luna.png">
+<br>
+<br>
+<div class="filter-card">
+  <input id="searchbar" onkeyup="search_mecanic()" type="text"
+name="search" placeholder="Digite aqui o que procura...">
+</div>
+<div class="mecanic">
+  <h1>Ficando mais forte</h1>
+  <p class="mec"><strong>Classe:</strong></p>
+<br>
+<p>A classe na teoria mostra o quão forte você é, sendo sempre uma hierarquia do menor para o maior, assim quanto maior a classe maior é a força do indíviduo. A classe ela é dada a alguém por muitos crítérios, tais como habilidades, atributos ou mana, todas essas coisas são avaliadas para que se possa classificar alguém. Ao todo existem 11 classes e cada uma possuí um valor diferente no dado e um limite de atributos diferente. A baixo há uma citação de todas as classes com seu limite:
+  <br><br>
+  <strong class="supercomum">Classe 1:</strong> 1d50+30
+  <br><br>
+  <strong class="muitocomum">Classe 2:</strong> 1d75+50
+  <br><br>
+  <strong class="comum">Classe 3:</strong> 1d100+70
+  <br><br>
+  <strong class="incomum">Classe 4:</strong> 1d150+100
+  <br><br>
+  <strong class="raro">Classe 5:</strong> 1d200+150
+  <br><br>
+  <strong class="muitoraro">Classe 6:</strong> 1d250+200
+  <br><br>
+  <strong class="superraro">Classe 7:</strong> 2d150+250
+  <br><br>
+  <strong class="epico">Bruxas:</strong> 2d200+300
+  <br><br>
+  <strong class="lendario">Deuses:</strong> 2d250+400
+  <br><br>
+  <strong class="mitico">Ordeiros:</strong> 3d200+500
+  <br><br>
+  <strong class="impossivel">Draskens:</strong> 3d250+600
+<br><br>
+Para subir de classe, deve-se estar no nível máximo da classe e receber um buff mais alto, seja esse buff uma habilidade, aumento drástico de atributo, evoluçao de raça, etc.<br><br>
+Cada vez que subir de classe seu nível reseta e seus atributos voltam para um valor mínimo, porém cada classe possuí um bônus de atributo inicial maior e um limite de atributos maior, cada classe possuí +10 nos atributos referente a classe anterior sendo que a <strong class="supercomum">classe 1</strong> possuí um atributo mínimo de 10, os atributos no estado mínimo são: <strong class="supercomum">+10</strong>, <strong class="muitocomum">+20</strong>, <strong class="comum">+30</strong>, <strong class="incomum">+40</strong>, <strong class="raro">+50</strong>, <strong class="muitoraro">+60</strong>, <strong class="superraro">+70</strong>, <strong class="epico">+80</strong>, <strong class="lendario">+90</strong>, <strong class="mitico">+100</strong>, <strong class="impossivel">+110</strong> sendo respectivamente <strong class="supercomum">Classe 1</strong>, <strong class="muitocomum">2</strong>, <strong class="comum">3</strong>, <strong class="incomum">4</strong>, <strong class="raro">5</strong>, <strong class="muitoraro">6</strong>, <strong class="superraro">7</strong>, <strong class="epico">Bruxas</strong>, <strong class="lendario">Deuses</strong>, <strong class="mitico">Ordeiros</strong> e <strong class="impossivel">Draskens</strong>.</p>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Estrelas:</strong></p>
+<br>
+<p>As estrelas são um pequeno adereço a sua  força, que aparece em um lugar de seu corpo, tendo efeito de progressão lento. Elas contam alguma coisa específica da sua vida, elas também servem como método de hierarquia.
+<br><br>
+Caso prefira, é possível ganhar estrelas através de apostas, as mesmas poderão ser diversas, ademais relíquias também podem lhe conceder estrelas adicionais. 
+<br><br>
+Na prática ela funciona de tal maneira: para cada 500 estrelas você acaba ganhando 5 pontos que você pode distribuir do jeito que você quiser, ou com  1000 estrelas você pode evoluir uma de suas habilidades, exceto habiliddes unicas. (as estrelas não serão perdidas visualmente).</p>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Ofícios:</strong></p>
+<br>
+<p>Os ofícios funcionam como uma perícia, porém mais especifica, indicando uma habilidade específica e ás vezes únicas de um perosnagem. Por não existirem ofícios já criados, são os próprios jogadores que decidem no que eles são bons, quais ofícios terão e quão bons nisso eles são, e então com a avaliação do mestre, deve ser decidido o rank do ofício e para qual situação poderá ser usado. 
+  <br> <br>
+  Pode ser levado em conta para a criação do ofício a lore/background do personagem, como por exemplo um personagem que fazia parte de um grupo de estrategistas de elite do governo americano que possuí uma perícia de análise de campo de batalha, pelo contexto a perícia poderia ser de "Rank A", mas no geral depende da avaliação do mestre sobre o porque e o quão boa a perícia deve ser. 
+  <br><br>
+  O ofício adiciona um bônus baseado em seu rank para os testes específicos para os quais ele foi criado, conforme a tabela abaixo.
+<br><br>
+<strong class="comum">D:</strong> +10
+<br>
+<strong class="muitoraro">C:</strong> +15
+<br>
+<strong class="epico">B:</strong> +20
+<br>
+<strong class="lendario">A:</strong> +25
+<br>
+<strong class="mitico">S:</strong> +50
+<br>
+<strong class="impossivel">SS:</strong> +75
+<br><br>
+Cada um poderá escolher 3 ofícios base, mas poderá se obter mais ao subir de classe, ganhando +1 para cada classe, chegando a ter 8 ofícios como um limite.</p>
+<br><br>
+Além disso, a cada 10 níveis e no nível 95 pode escolher 1 dos seus ofícios e aumentar seu rank em 1 ou adicionar 1 subefeito.
+<br>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Ranks das habilidades:</strong></p>
+<br>
+<p>Todas as habilidades possuem um certo rank que determina a força e a potência de uma habilidade, cada um desses ranks possuem suas funcionalidades sistematicamente e dentro do RPG.
+<br><br>
+As classeficações das habildiades estão listadas logo abaixo:
+<br><br>
+<strong class="supercomum">Rank D:</strong>
+<br><br>
+<strong class="muitocomum">Rank C:</strong>
+<br><br>
+<strong class="incomum">Rank B:</strong>
+<br><br>
+<strong class="raro">Rank A:</strong>
+<br><br>
+<strong class="superraro">Rank S:</strong>
+<br><br>
+<strong class="epico">Rank SS:</strong>
+<br><br>
+<strong class="lendario">Habilidade instintiva:</strong>
+<br><br>
+<strong class="mitico">Habilidade única:</strong>
+<br><br>
+<strong class="impossivel">Habilidade definiva:</strong>
+<br><br>
+Todas as habilidades podem ser melhoradas ou nerfadas trocando seu rank, porém uma habilidade comum mesmo que esteja em <strong class="epico">rank SS</strong> não poderá virar uma <strong class="mitico">habilidade única</strong>, <strong class="lendario">instintiva</strong> e muito menos uma <strong class="impossivel">habilidade definiva</strong>. As <strong class="mitico">habilidade únicas</strong> só podem ser adquiridas normalmente ao evoluir de uma raça a outra enquanto possuir uma <strong class="lendario">habilidade instintiva</strong>, e para se adquirir uma <strong class="impossivel">habilidade definiva</strong> deve-se evoluir de raça para o ápice daquela raça <strong class="impossivel">(Lorde demônio verdadeiro)</strong>.
+<br><br>
+Habildiades de Rank podem ser melhoradas através de Npc's, através da evolução de raça ou através de alguns bônus de subida de nível.
+<br><br>
+Por RP cada rank de habilidade tem um nível de destruição ou poder de efeito no mundo diferente e com isso faz com que a habilidade tenha uma força baseada nesse nível de destruição. Algo como destruir uma parede pode ser classificado como <strong class="supercomum">rank D</strong>, destruir uma casa <strong class="muitocomum">rank C</strong>, Destruir uma prédio <strong class="incomum">rank B</strong>, destruir um bairro como <strong class="raro">rank A</strong>, destruir uma cidade como <strong class="superraro">rank S</strong>, destruir um país como <strong class="epico">rank SS</strong>. As habilidades que exercem um nível de destruição maior que um país seu dano aumenta em 100% para cada passo de destruição, sendo assim sistematizando danos de explosões e destruições. Vale ressaltar que mesmo aquelas habildiades que não possuem um nível de destruição em larga escala mas tiverem um poder destrutivo focado tão alto quanto, ainda se enquandram nesse sistema.
+<br><br>
+Mecânicamente as habilidades possuem uma base de dano correspondente ao seu rank, seguindo esse padrão:
+<br><br>
+<strong class="supercomum">Rank D:</strong> 100% - 150%
+<br><br>
+<strong class="muitocomum">Rank C:</strong> 200% - 250%
+<br><br>
+<strong class="incomum">Rank B:</strong> 300% - 500%
+<br><br>
+<strong class="raro">Rank A:</strong> 550% - 700%
+<br><br>
+<strong class="superraro">Rank S:</strong> 750% - 1.000%
+<br><br>
+<strong class="epico">Rank SS:</strong> 1.500% - 1.800%
+<br><br>
+<strong class="lendario">Habilidade instintiva:</strong> 200% - 500%
+<br><br>
+<strong class="mitico">Habilidade única:</strong> 700% - 1.200%
+<br><br>
+<strong class="impossivel">Habilidade definiva:</strong> 1.500% - INF
+<br><br>
+Abaixo uma tabela para quantidade de cura:
+<br><br>
+<strong class="supercomum">Rank D:</strong> 20% - 50%
+<br><br>
+<strong class="muitocomum">Rank C:</strong> 100% - 150%
+<br><br>
+<strong class="incomum">Rank B:</strong> 200% - 300%
+<br><br>
+<strong class="raro">Rank A:</strong> 350% - 500%
+<br><br>
+<strong class="superraro">Rank S:</strong> 600% - 800%
+<br><br>
+<strong class="epico">Rank SS:</strong> 1.000% - 1.500%
+<br><br>
+<strong class="lendario">Habilidade instintiva:</strong> 10% - 100%
+<br><br>
+<strong class="mitico">Habilidade única:</strong> 200% - 800%
+<br><br>
+<strong class="impossivel">Habilidade definiva:</strong> 1.000% - INF
+<br><br>
+Habilidades com efeitos de buff, nerf ou quaisquer outras utilidades são difíceis de se classificarem pois requer analisar seus efeitos e bônus.
+</p>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Ranks de armas:</strong></p>
+<br>
+<p>Todas as armas possuem uma classificação baseado em seu nível de poder, seja ele destrutivo ou apenas algo simples mas com grande poder, algumas dessas armas são únicas e nunca jamais poderão existir iguais e outras são apenas muito difíceis de reproduzir, isso faz com que cada arma tenha uma certa peculiaridade única.
+<br><br>
+As armas são distribuidas dessa forma:
+<br><br>
+<strong class="supercomum">Rank D:</strong>
+<br><br>
+<strong class="incomum">Rank C:</strong>
+<br><br>
+<strong class="raro">Rank B:</strong>
+<br><br>
+<strong class="superraro">Rank A:</strong>
+<br><br>
+<strong class="epico">Rank S:</strong>
+<br><br>
+<strong class="lendario">Rank SS:</strong>
+<br><br>
+<strong class="mitico">Relíquias:</strong>
+<br><br>
+<strong class="impossivel">Relíquias divinas:</strong>
+<br><br>
+As armas ao contrário das habilidades não podem evoluir naturalmente e devem passar por processos especificos para que tal aconteça, tais como melhorias vindo de alguns ferreiros ou concedendo algumas habilidades para arma mas no geral o rank serve para medir a capacidade máxima da arma. Em outras palavras uma <strong class="mitico">relíquia</strong> pode ter o mesmo dano de uma arma de <strong class="incomum">Rank C</strong>, mas uma <strong class="mitico">relíquia</strong> pode evoluir bem mais, ou só tem uma habilidade apelona mesmo.
+<br><br>
+Armas que possuem alguma habilidade original tendem a ter menos pontos, já que elas já "gastaram" seus pontos por aquela habildiade.
+<br><br>
+O potencial de cada Rank de arma está descrita abaixo.
+<br><br>
+<strong class="supercomum">Rank D:</strong> Pode chegar até 25 de maestria e ter até 1 ponto de melhoria.
+<br><br>
+<strong class="incomum">Rank C:</strong> Pode chegar até 50 de maestria e ter até 2 pontos de melhoria.
+<br><br>
+<strong class="raro">Rank B:</strong> Pode chegar até 75 de maestria e ter até 3 pontos de melhoria.
+<br><br>
+<strong class="superraro">Rank A:</strong> Pode chegar até 100 de maestria e ter até 4 pontos de melhoria.
+<br><br>
+<strong class="epico">Rank S:</strong> Pode chegar até 150 de maestria e ter até 6 pontos de melhoria.
+<br><br>
+<strong class="lendario">Rank SS:</strong> Pode chegar até 200 de maestria e ter até 8 pontos de melhoria.
+<br><br>
+<strong class="mitico">Relíquia:</strong> Pode chegar até 250 de maestria e ter até 10 pontos de melhoria.
+<br><br>
+<strong class="impossivel">Reliquía divina:</strong> Pode chegar até 500 de maestria e ter até 15 pontos de melhoria.
+<br><br>
+</p>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Pontos de melhoria:</strong></p>
+<br>
+Os pontos de melhoria são alguns pontos que usamos para melhorar as armas, toda arma possuí uma certa quantidade natural de pontos, que marca o quanto essa arma pode progredir. Os pontos de melhoria podem ser adquiridos quando a arma passa por um processo de despertar, isso faz com que arma desperte seu potêncial recebendo alguns pontos, o processo é na verdade um teste feito pelo forjador ou ferreiro, o dado é um teste INT+ metade da SAB e pode haver até 3 resultados: uma falha, faz com que a arma tenha uma chance de regredir, perdendo 1 ponto de melhoria; um sucesso, faz com que a arma ganhe 1 ponto de melhoria; super-sucesso, faz com que arma ganhe entre 2 à 3 pontos de melhoria e se o dado for um crítico faz com que a arma ganhe +10 de dano. (lembrando que toda arma tem seu limite de pontos).
+<br><br>
+Além disso, os pontos de melhoria podem ser gastos para aperfeiçoar a arma, esse processo conhecido como melhoria faz gastar um ponto de melhoria para receber +20 em dano. Os pontos de melhoria também podem ser usados para conceder habilidades imbutidas. Essas habilidades são no geral algumas customizações que podem ser dados a sua arma, cada um custando uma certa quantidade de pontos. A lista de habilidades imbutidas está na aba de habilidades do códice.
+</p>
+<br>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+  <p class="mec"><strong>Ressonância das almas:</strong></p>
+  <br>
+  A ressonância como o nome já diz está diretamente ligado com a alma dos usuários. É uma habilidade que deve ser feita em conjunto com outras pessoas capazes de usa-la, ao fazer isso poderá usufruir de sua passiva e passa a poder usar a habilidade ativa.
+  <br><br>
+  A ressonância sempre é composta por uma habilidade passiva e uma habilidade ativa, além disso ela pode ser de 3 tipos distintos, são eles: Controle, utilitário e autocentrado. 
+  <br><br>
+  Controle:
+  <br>
+  A ressonância do tipo de controle é voltada a dar suporte, podendo gerar mana, bônus, ou cura.
+  <br><br>
+  Utilitário:
+  <br>
+  A ressonância do tipo utilitária pode ter efeitos adversos durante um combate, tais quais como alteração de posições, aplicação de efeitos negativos ou benéficos, cura leve... Tenha em mente que o arquétipo pode ser o meio termo entre os dois, ou simplesmente algo que não se enquandra em nenhum dos outros dois arquétipos.
+  <br><br>
+  Autocentrado:
+  <br>
+  A ressonância do tipo autocentrada tem efeitos únicamente sobre o dono da ressonância, muitas vezes sendo comum possuir um foco para causar dano.
+  <br><br>
+  Na hora de criar uma ressonância, tenha em mente que cada alma é única, portanto cada ressônancia também é, embora possa existir ressonâncias que sejam extremamente semelhantes. Além disso a ressonância das almas segue os mesmos valores de dano/cura que uma habilidade de rank A (inicialmente) para suas habilidades, mas pode ter seu valor aumentado até os mesmos valores de uma habildidade de rank SS.
+  <br><br>
+  Também deve ser levado em consideração que quem cria as habilidades de ressonância é o próprio mestre (caso algum dos personagens escolhidos já não tenha 1), mas as habilidades devem ter haver com a personalidade ou a natureza do personagem. 
+  <br><br>
+  Para cada 100 no atributo de aura, os valores de dano/cura da ressonância aumenta em 1 rank, podendo chegar a ter valores equivalentes a uma habilidade de rank SS.
+  <br><br>
+  </p>
+  <hr/>
+  </div>
+  <br>
+  <div class="mecanic">
+    <p class="mec"><strong>Stands:</strong></p>
+    <br>
+    Os stands são uma força astral que representam a alma do usuário. Eles possuem habilidades extremamente únicas que podem ter a potência alterada por seus status, os status são descritos abaixo:
+    <br><br>
+    Dano: O dano de um stand é medido através do atributo de aura e funciona como a maestria, sendo também considerado como um ataque básico. 
+    <br><br>
+    Alcance: O alcance de um stand naturalmente é curto, porém, durante a criação do stand, leve em consideração que para cada 1 passo de distância à mais, o dano do stand é reduzido 10%. Para stands já existentes, se forem do tipo de alcance longo, considere-o de distância gigante e reduza o dano dele de acordo com a distância que possuir.
+    <br><br>
+    Poder: O poder do stand naturalmente é de rank B, mas pode sacrificar 10% do dano + 1 passo da distância do stand para aumentar o rank da habilidade do stand em um rank à mais, esse processo pode ser repetido para aumentar o rank das habilidades. Lembrando que quem decide o poder do stand é puramente o mestre, e o poder do stand não tem que ter nada haver com o personagem podendo por exemplo: dar um poder de lego para um futuro rei das almas completamente dark e apático. Para stands que já existem, o mestre apenas deve reduzir o dano e o alcance do stand em relação ao seu próprio julgamento do "balanceamento" da habilidade. As habilidades dos stands podem chegar no máximo até rank S. leve em consideração que o atributo usado para as habilidades dos stands também é a "aura".
+    <br><br>
+    Para se adquirir um stand deve-se ter uma alma digna, para descobrir, tem que se perfurar com uma flecha e passar em um teste de sorte CD=70, no caso de um sucesso ganhará um stand, em caso de falha ficará petrificado. O teste pode ser feito quantas vezes quiser, isso é, se conseguir se mexer pra isso...
+    <br><br>
+    Os stands também podem passar por progressões, como o requiem por exemplo, em casos disso acontecer, leve em consideração que a habilidade do stand será aprimorada, aumentando o seu rank em uma categoria, além de ganhar outra habilidade no rank original da primeira habilidade ou no rank atual da mesma. Além disso o dano do stand aumenta, podendo ser um aumento de +10, mas tendo um limite de +50.
+    <br><br>
+    No caso de um usuário de stand ser perfurado novamente por uma flecha um teste de sorte deverá ser rolado, a CD a ser considerada é 80, em caso de sucesso o usuário do stand ganha outra habilidade de rank igual ou menor do que rank B. No caso de tornar-se requiem, apenas a habilidade primária recebe o "Up".
+    <br><br>
+    Alcançar o céu pode não ser uma tarefa fácil, mas caso aconteça, tenha em mente que o stand dever ter relação com o espaço ou o tempo. O Stand com o poder do céu, tem todas as sua habilidade aumentadas em 1 Rank à mais da que estão, além de ganhar uma habilidade extra de rank SS.
+    <br><br>
+    Stands podem ser bem fortes, porém eles deixam a alma desprotegida, quando o stand (humanoide ou fora do corpo, não conta para acessórios ou presos ao corpo) está amostra o usuário perde 25 na No bloqueio e na esquiva. Além disso, acertar o stand pode ferir o usuário, por isso o stand também possuí uma resistência própria, sendo neutro contra todos os tipos de dano, exceto contra néter e éterio, que possuí -100% de resistência, mas contra físico possuí 50% de resistência.
+    </p>
+    <br>
+    <br>
+    <hr/>
+    </div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Runas:</strong></p>
+<br>
+As runas são pequenas pedras com um símbolo gravado com os resquícios da alma de alguém. Elas podem ser liguadas gratuítamente a outras almas em seus devidos espaços, porém há um custo para a remoção segura, sendo este: 1.000 C.c por estrela da runa, por exemplo, uma runa de 4 estrelas custará 4.000C.c para ser removida, caso deseje, também é possível gravar uma runa por cima de outra (colocar uma outra runa em um espaço já ocupado), porém ao fazer perderá a runa sobrescrita permanentemente, embora esse processo seja gratuito. Quando a runa é ligada a uma alma ela concede um aumento de força e um bônus extra se os simbolos das runas formarem um conjunto. Os bônus estão descritos a baixo:
+<br><br>
+Energy: A runa energy concede 500 de vida a mais para cada 2 runas energy equipadas. Se tiver 6 runas energy equipadas ganhará +500 de vida extra.
+<br><br>
+Fatal: A runa fatal concede +250% de dano em todas as suas habilidades para cada 3 runas fatal equipadas.
+<br><br>
+Blade: A runa blade concede +5% de taxa crítica para cada 2 runas blade equipadas.
+<br><br>
+Swift: A runa swift concede +15 em acerto e esquiva para cada 2 runas swifts equipadas. Se tiver 4 runas swifts equipadas aumenta o seu alcance em 1 passo. Se tiver 6 runas swifts equipadas ao invés de receber +45, receberá +50.
+<br><br>
+Focus: A runa focus reduz o resultado final do teste de resistência do inimigo em 15 quando o mesmo for resistir a um efeito negativo para cada 2 runas focus equipadas. Se tiver 6 runas Focus equipadas reduz o resultado final em 75 ao invés de 45.
+<br><br>
+Guard: A runa guard aumento o bloqueio em 20 para cada 2 runas guard equipadas. Se tiver um conjunto de 6 runas guard ganhará +15 em bloqueio e esquiva extra.
+<br><br>
+Endure: A runa endure aumenta o resultado final de um teste de resistência seu em 15 quando for resistir à um efeito malígno para cada 2 runas endure. Se tiver 6 runas endure aumenta o resultado final em 75 ao invés de 45.
+<br><br>
+Shield: A runa shield lhe concede 500 de escudo para todos os aliados para cada 2 runas shield equipadas.
+<br><br>
+Revenge: Para cada 4 runas revenge equipadas deverá rolar 1d100 quando for atacado, se tirar um dado maior que 50 poderá causar dano igual a sua maestria mais alta no inimigo que lhe atacou.
+<br><br>
+Will: Para cada 2 runas will equipadas receberá 1 turno extra com imúnidade a efeitos negativos.
+<br><br>
+Nemesis: Para cada 2 runas equipadas aumenta todas as maestrias em 10 e o dano de todas as suas habilidades em 25% para cada 10% de vida perdida. Se tiver quatro runas nemesis quando perder 10% da vida, receberá 20 em todas as maestria e 50% de dano em todas as habilidades, quando perder 20% da vida, receberá 40 em todas as maestrias e 100% em todas as habilidades...
+<br><br>
+Vampire: A runa vampire faz você recuperar 50 de vida quando acertar um ataque para cada 2 runas vampire equipadas. Se tiver 6 runas vampire equipadas ganha 200 de vida por ataque acertado.
+<br><br>
+Destroy: A runa destroy causa 50 de dano verdadeiro que reduz a vida máxima do alvo toda vez que acertar um ataque para cada 2 runas equipadas.
+<br><br>
+Despair: Para cada 4 runas despair equipadas você deve rolar 1d100 quando acertar um ataque, se tirar a cima de 80 o alvo ficará "Stunado" por 1 turno.
+<br><br>
+Violent: Para cada 4 runas violent equipadas você deve rolar 1d100 quando errar ou acertar um ataque, se tirar a cima de 80 receberá 1 ação extra.
+<br><br>
+Rage: Para cada 3 runas Rage aumenta o dano crítico em 50%. Exemplo: Se tiver 3 runas rage, seu acerto crítico causará 2x o dano original ao invés de 1,5x, e portanto se tiver 6 runas rage, causará 2,5x o dano original.
+<br><br>
+Fight: Para cada 1 runa fight equipada aumenta o dano de todas as habilidades suas e dos aliados em 50%.
+<br><br>
+Determination: Para cada 1 runa determination equipada aumenta o bloqueio próprio e de todos os aliados em 5.
+<br><br>
+Enchance: Para cada 1 runa enchance equipada aumenta a vida própria e de todos os aliados em 150.
+<br><br>
+Accuracy: Para cada 1 runa accuracy equipada reduz o dado final do teste de resistência do inimigo em 5.
+<br><br>
+Tolerance: Para cada 1 runa tolerance equipada aumenta o dado final do teste de resistencia de todos os aliados em 5.
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Nivelamento:</strong></p>  
+Nivelamento é o método na qual os personagens, tanto os players tanto os NPC's, devem se submeter ao subir de nível. 
+<br><br>
+A cada nível que subir ganhará 4 pontos para distribuir, sempre tendo em mente o limite de cada atributo definido pela sua classe. Esse bônus de atributo aumenta em 1 a cada 20 níveis, ex: do nivel 1 ao 20 ganha 4 pontos, do nivel 21 ao 40 ganha 5 pontos... (Esses bônus resetam quando resetar seu nível).
+<br><br>
+A cada 5 níveis ganha +1 em todos os atributos. Esse bônus aumenta em +1 a cada 2 classes (até a classe 6), ex: na classe 1 e 2 ganha +1 em todos os atributos a cada 5 níveis, na classe 3 e 4 ganha +2 e todos os atributos a cada 5 níveis...(Esses bônus resetam quando resetar seu nível). Além disso, em todo nível terminado em 5 (ex: nível 5, 15, 25, 35...), pode escolher um bônus maior, dentre: +250 de vida, +250 de mana, +5 em maestria, +2 no limite de 1 atributo ou 50x Nível de C.c.  
+<br><br>
+A cada 10 níveis ganha uma "habilidade terrestre", mas apenas até o nível 90, podendo ter 9 "habilidades terrestres". (Essas habilidades não resetam quando resetar seu nível, por conta disso é possivel troca-las dentro do período de 3 mesas).
+<br><br>
+O ato de eliminar npc's e criaturas é a forma mais básica para se subir de nivel, mas ainda sim existem outras formas como o "rare candy", ambos oferecem um sistema de "XP". Enquanto o rare candy lhe concede XP restante para subir de nível, matar criaturas e npc's lhe concedem uma quantidade específica para subir de nível, sendo esses conforme as suas classes como está demonstrado abaixo:
+<br>
+<br>
+<strong>Criaturas:</strong>
+<br>
+<br>
+Classe 1: 5 xp
+<br>
+Classe 2: 25 xp
+<br>
+Classe 3: 100 xp
+<br>
+Classe 4: 250 xp
+<br>
+Classe 5: 500 xp
+<br>
+Classe 6:  1.000 xp
+<br>
+Classe 7: 2.000 xp
+<br>
+Classe 8 (Divinas): 4.000 xp
+<br>
+<br>
+<strong>Npc's:</strong>
+<br>
+<br>
+Classe 1: 25 xp
+<br>
+Classe 2: 200 xp
+<br>
+Classe 3: 550 xp
+<br>
+Classe 4: 1.000 xp
+<br>
+Classe 5: 2.500 xp
+<br>
+Classe 6: 4.000 xp
+<br>
+Classe 7: 6.000 xp
+<br>
+Classe 8/9 (Deuses e bruxas): 10.000 xp
+<br>
+Classe 10 (Ordeiros): 15.000 xp
+<br>
+Classe 11 (Draskens): 20.000 xp
+<br><br>
+A tabela de XP necessária para cada nível se encontra aqui:
+<br><br>
+<table>
+  <tr>
+    <td>1: 10xp</td>
+    <td>2: 10xp</td>
+    <td>3: 10xp</td>
+    <td>4: 15xp</td>
+    <td>5: 15xp</td>
+    <td>6: 15xp</td>
+    <td>7: 20xp</td>
+    <td>8: 20xp</td>
+    <td>9: 20xp</td>
+    <td>10: 25xp</td>
+  </tr>
+    <td>11: 25xp</td>
+    <td>12: 25xp</td>
+    <td>13: 25xp</td>
+    <td>14: 30xp</td>
+    <td>15: 30xp</td>
+    <td>16: 30xp</td>
+    <td>17: 35xp</td>
+    <td>18: 35xp</td>
+    <td>19: 35xp</td>
+    <td>20: 50xp</td>
+  </tr>
+    <td>21: 50xp</td>
+    <td>22: 50xp</td>
+    <td>23: 50xp</td>
+    <td>24: 75xp</td>
+    <td>25: 75xp</td>
+    <td>26: 75xp</td>
+    <td>27: 100xp</td>
+    <td>28: 100xp</td>
+    <td>29: 100xp</td>
+    <td>30: 150xp</td>
+  </tr>
+    <td>31: 200xp</td>
+    <td>32: 200xp</td>
+    <td>33: 200xp</td>
+    <td>34: 200xp</td>
+    <td>35: 200xp</td>
+    <td>36: 200xp</td>
+    <td>37: 300xp</td>
+    <td>38: 300xp</td>
+    <td>39: 300xp</td>
+    <td>40: 300xp</td>
+  </tr>
+    <td>41: 300xp</td>
+    <td>42: 300xp</td>
+    <td>43: 300xp</td>
+    <td>44: 400xp</td>
+    <td>45: 400xp</td>
+    <td>46: 400xp</td>
+    <td>47: 400xp</td>
+    <td>48: 400xp</td>
+    <td>49: 400xp</td>
+    <td>50: 500xp</td>
+  </tr>
+    <td>51: 750xp</td>
+    <td>52: 750xp</td>
+    <td>53: 750xp</td>
+    <td>54: 1.000xp</td>
+    <td>55: 1.000xp</td>
+    <td>56: 1.000xp</td>
+    <td>57: 1.000xp</td>
+    <td>58: 1.250xp</td>
+    <td>59: 1.250xp</td>
+    <td>60: 1.250xp</td>
+  </tr>
+    <td>61: 1.550xp</td>
+    <td>62: 1.500xp</td>
+    <td>63: 1.500xp</td>
+    <td>64: 1.750xp</td>
+    <td>65: 1.750xp</td>
+    <td>66: 1.750xp</td>
+    <td>67: 1.750xp</td>
+    <td>68: 2.000xp</td>
+    <td>69: 2.000xp</td>
+    <td>70: 2.500xp</td>
+  </tr>
+    <td>71: 1.000xp</td>
+    <td>72: 1.000xp</td>
+    <td>73: 1.500xp</td>
+    <td>74: 1.500xp</td>
+    <td>75: 2.000xp</td>
+    <td>76: 2.000xp</td>
+    <td>77: 2.000xp</td>
+    <td>78: 2.500xp</td>
+    <td>79: 2.500xp</td>
+    <td>80: 5.000xp</td>
+  </tr>
+    <td>81: 2.000xp</td>
+    <td>82: 2.000xp</td>
+    <td>83: 3.000xp</td>
+    <td>84: 3.000xp</td>
+    <td>85: 4.000xp</td>
+    <td>86: 4.000xp</td>
+    <td>87: 4.000xp</td>
+    <td>88: 5.000xp</td>
+    <td>89: 5.000xp</td>
+    <td>90: 10.000xp</td>
+  </tr>
+    <td>91: 4.000xp</td>
+    <td>92: 4.000xp</td>
+    <td>93: 6.000xp</td>
+    <td>94: 6.000xp</td>
+    <td>95: 8.000xp</td>
+    <td>96: 8.000xp</td>
+    <td>97: 8.000xp</td>
+    <td>98: 10.000xp</td>
+    <td>99: 10.000xp</td>
+    <td>100: 20.000xp</td>
+  </tr>
+</table>
+<br>
+Além disso é válido ressaltar que das classes 1 à 6 existe um limite de nível para cada classe, sendo que a <strong class="supercomum">classe 1</strong> possuí um limite de nível 20, <strong class="muitocomum"> classe 2:</strong> 30, <strong class="comum">classe 3:</strong> 50, <strong class="incomum">classe 4:</strong> 70, <strong class="raro">classe 5:</strong> 80 e <strong class="muitoraro">classe 6:</strong> 90.
+<br>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Ascensão:</strong></p>  
+A ascensão é um método de fortalecimento usado ao chegar no nível 90, e pode te levar até o nível 100, por ser algo fora do nívelamento ele concede habilidades extras próprias. 
+<br>
+<br>
+Para subir de nível usando a ascensão deve-se conquistar o "XP" necessário como em qualquer nível, porém existem algumas "tasks" (Camadas celestes) que ao serem concluídas reduzem o XP necessário para subir de nível em 2. Ao todo são 10 Camadas celestes e cada camada reduz o XP de um nível em específico (o número da camada é correspondente ao nível específico). As Camadas celestes são:
+<br>
+<br>
+<p>1º camada:</p>
+<br>
+Deve-se possuir 1 habilidade definitva.
+<br>
+<br>
+<p>2º camada:</p>
+<br>
+Deve-se possuir 4 atributos (base) no máximo.
+<br>
+<br>
+<p>3º camada:</p>
+<br>
+Deve-se possuir 500 de maestria base (desconsiderando armas).
+<br>
+<br>
+<p>4º camada:</p>
+<br>
+Deve-se possuir 1 relíquia divina.
+<br>
+<br>
+<p>5º camada:</p>
+<br>
+Deve-se possuir 50.000 c.c (Ao chegar a este valor, mesmo que já tenha gasto, ainda contará).
+<br>
+<br>
+<p>6º camada:</p>
+<br>
+Deve-se possuir 20.000 de vida máxima (base).
+<br>
+<br>
+<p>7º camada:</p>
+<br>
+Deve-se possuir 20.000 de mana máxima (base).
+<br>
+<br>
+<p>8º camada:</p>
+<br>
+Deve-se possuir 80 ou mais de sanidade.
+<br>
+<br>
+<p>9º camada:</p>
+<br>
+Deve-se possuir 5 ou mais imunidades elementais.
+<br>
+<br>
+<p>10º camada:</p>
+<br>
+Deve-se concluir todos os outros requisitos.
+<br>
+<br>
+Cada nível que subir ganhará 1 ponto ascendente, esses níveis podem ser trocados por alguns bônus, os quais são:
+<br>
+<br>
+<p>Uma "habilidade celeste" (pode ser pego no máximo 2 vezes):</p>
+<br>
+<br>
+<p>Uma "habilidade terrestre" (pode ser pego no máximo 1 veze):</p>
+<br>
+<br>
+<p>+10% de resistência em todos os elementos:</p>
+<br>
+<br>
+<p>+20% de resistência em 1 elemento:</p>
+<br>
+<br>
+<p>+1.000 de vida máxima:</p>
+<br>
+<br>
+<p>+1.000 de mana :</p>
+<br>
+<br>
+<p>1 runa customizada do jeito que quiser (mantendo o limite de status de uma runa):</p>
+<br>
+<br>
+<p>Evoluir 1 habilidade qualquer, exceto habilidades definitvas (pode ser pego 1 vez):</p>
+<br>
+<br>
+<p>+5 no limite de 1 atributo:</p>
+<br>
+<br>
+<p>+2 no limite de 2  atributos:</p>
+<br>
+<br>
+<p>+10 pontos para distribuir:</p>
+<br>
+<br>
+<p>+20 em todas as maestrias:</p>
+<br>
+<br>
+<p>+10 no limite de 1 maestria:</p>
+<br>
+<br>
+<p>+1 ofício extra (esse ofício será de rank "B"):</p>
+<br>
+<br>
+<p>+1 Benção (pode ser escolhida 1 vez, o jogador e o mestre negociam a benção):</p>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Divinação:</strong></p>  
+A divinação é um método de evolução único que fica disponível àqueles que chegaram no nível 100. Este método não se compromete com "Ups" de níveis, mas sim com pequenos requisítos. 
+<br>
+<br>
+Outrora não forneça níveis e nem habilidades ao seu decorrer, ele dará uma recompensa única... Ao completa-lo terá direito de subir de classe, porém a classe ao qual estão sujeitos são duas classes distinitas e muito superiores que só podem ser alcançadas por aqui, as classes são: Bruxas e Deuses, completos opostos que carregam o aspecto mau e bom.
+<br>
+<br>
+Os requísitos são listados abaixo:
+<br>
+<br>
+<p>Ter algum elemento ou poder dominante sobre algo.</p>
+<br>
+Deve-se demonstrar dominância sobre algum aspecto do mundo. A superioridade é algo inevitável ao seres superiores. Possuir uma habilidade ou mais que seja de combate (ou não) na qual seja visivelmente destáquavel em seu personagem.
+<br>
+<br>
+<p>Possuir uma forte influência sobre os seres do mundo.</p>
+<br>
+Deve-se mostrar que sua presença afeta outros ao seu redor de maneira significante, fazendo com que sua existência não seja ignorada. Ao chegar a divinação, cada ato relevante (decidido pelo mestre) contará para esse requísito, devendo possuir 10 atos relevantes, sejam eles maus ou bons.
+<br>
+<br>
+<p>Possuir uma forte ambição por algo.</p>
+<br>
+Uma ambição e um ego forte elevam qualquer poder as alturas, sua mente e almas devem estar preparadas para o que alcançarão para que seu corpo também esteja. Seu personagem deve demonstrar uma motivação forte para contar para esse requísito, nota-se que não deve ser algo simples (fácil) de se conquistar, tendo que ser algo constante para seu perosnagem e não algo passageiro.
+<br>
+<br>
+<p>Ter uma alma forte:</p>
+<br>
+Sua alma, seu ser, deve ser forte e capaz de aguentar tudo para que chegue a esse objetivo, uma alma forte é aquela que mesmo corrompida ainda almejará e fará tudo que for capaz por seu objetivo. Sendo esse o requísito mais fácil mecânicamente, para cumpri-lo seu personagem deve manter-se constante em sua ambição, como? Passando por algo que prove essa determinação.
+<br>
+<br>
+<p>Ter demonstrado relevância ao mundo:</p>
+<br>
+Alguém como, ou tão forte quanto suas ambições, não pode ser vazio, deve ter seu valor provado, mas não às pessoas e sim ao mundo. Seu personagem deve ter algum título de grande relevância ao mundo.
+<br>
+<br>
+Após os cumprimentos desses requísitos, uma provação diante de um ordeiro se iniciará. Ao concluí-lo finalmente terás acesso ao poder divino. Subindo para a classe 8 ou 9, seu nível resetará, porém, os niveis da ascenssão não resetarão e o ganho de "XP" será dobrado. Além disso ganhará um dominio e uma habilidade que represente esse domínio. O domínio dependerá do que se tornou, e para definir isso terás de rolar 1d100, sendo que abaixo de 60 se tornará uma bruxa ou ácima disso se tornará um deus. 
+<br>
+<br>
+A diferença entre um Deus e uma bruxa é determinada pela sua corrupção, portanto uma bruxa é alguém no nível de um deus que acabou sendo corrompido. Dito isso, caso transforme-se em uma bruxa, é possível purificar-se, assim como um deus pode ter um risco de corromper-se. O método de purificação consiste em abdicar dos 10 níveis de ascensão	e passar novamente pelos requisítos da divinação (caso tenha discumprido-os), assim passando pela provação de um ordeiro novamente.
+<br>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+  <p class="mec"><strong>Título:</strong></p>
+  <br>
+  Os títulos são conquistados ao realizar um ato de honra ou ato digno de ser memorável. Tais titulos concedem alguns benefícios que podem ser diversos, desde uma habilidade à um bônus, em contrapartida somente um benefício de título pode ser usado por vez.
+  <br>
+  <br>
+  <hr/>
+  <h1>Em ação</h1>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Resistências:</strong></p>
+<br>
+<p>As resistências representam o quanto seu personagem pode resistir a um tipo de ataque, demonstrando a sua resiliência. Os diferentes tipos de ataques que se pode resistir são: ígneo, hydro, sagrado, morte, físico, veneno, etério, elétrico, sombra, luz, psíquico, astral, Gelo, neter, vitaly, vento.
+<br><br>
+A resistência é representada por uma quantia em porcentagem, quando a porcentagem for positiva (ex:50%), nesse caso você reduz o dano do respectivo elemento em 50%, entretanto, quando a porcentagem for negativa (ex:-50%), nesse caso voce aumenta o seu dano recebido nesses mesmo 50%. O limite de resistência que se pode ter é 100% (imunidade) e o mínimo é -100% (Vulneravel).</p>
+<br>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Almas:</strong></p>
+<br>
+<p>Cada ser no mundo recebe um tipo de alma que mais se encaixa consigo mesmo. Cada alma possui 2 habilidades relacionadas as seus aspectos caracteristicos. Ademais, quando se chega em um nível alto de harmônia astral, há a possibilidade de você criar uma habilidade exclusiva sua relacionada a sua alma.
+Os tipos de almas são:</p>
+<img class="deter" id="cor" src="imagens/determinacao.png">
+<img class="genti" id="cor" src="imagens/gentileza.png">
+<img class="bravu" id="cor" src="imagens/bravura.png">
+<img class="inte" id="cor" src="imagens/integridade.png">
+<img class="pac" id="cor" src="imagens/paciencia.png">
+<img class="perse" id="cor" src="imagens/perseveranca.png">
+<img class="jus" id="cor" src="imagens/justica.png">
+<img class="medo" id="cor" src="imagens/medo.png">
+<img class="hate" id="cor" src="imagens/hate.png">
+<p class="direita">
+<strong class="mitico">Vermelha</strong> - Determinação:
+<br>
+Está ligada a persistência para conseguir o que se deseja.
+<br><br>
+<strong class="comum">Verde</strong>- Bondade
+<br>
+Qualidade de quem tem alma nobre e generosa e é naturalmente inclinado a fazer o bem.
+<br><br>
+<strong class="lendario">Laranja</strong> - Bravura
+<br>
+Qualidade que reflete a coragem de alguém.
+<br><br>
+<strong class="muitoraro">Azul</strong> - Integridade
+<br>
+Está diretamente ligada a qualidade de alguém de conduta reta, pessoa de honra, ética, educada, inocente, puro.
+<br><br>
+<strong class="raro">Cíano</strong> - Paciência
+<br>
+A paciência é ligada principalmente na tolerância com os erros alheios ou diante situações e fatos indesejados.
+<br><br>
+<strong class="epico">Roxa</strong> - Perseverança
+<br>
+Perseverança é a determinação consistente, é a firmeza ou a constância num sentimento, numa resolução, num trabalho.
+<br><br>
+<strong class="amarelo">Amarelo</strong> - Justiça
+<br>
+Está ligado a pessoa que é conforme à justiça, à equidade, à razão.
+<br><br>
+<strong class="rosa">Rosa</strong> - Medo
+<br>
+Está ligado a pessoa que transmite a sensação de medo, seja ele próprio ou aquele que impomos.
+<br><br>
+<strong class="negra">Negra</strong> - Ódio
+<br>
+Está ligado a uma pessoa odiosa, aquele que sente ódio de tudo. Essa alma também represnta um estado perdido, normalmente visto naqueles que se perdem para a calamidade.
+</p>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Ataques e habilidades:</strong></p>
+<br>
+<p>Cada jogador possui um ataque fixo que fica registrado na parte de maestrias, que tal qual é causado quando há um sucesso no dado de acerto, por exemplo: Sua maestria é 40, caso acerte causará exatamente 40, esse tipo de ataque é chamado de ataque básico. As maestrias escalam com um atributo específico e além de poderem ser aumentadas com os atributos básicos, as mesmas podem ser aumentadas com treinamentos durante o RPG. Os atributos chave das maestrias são representados abaixo.
+  <br><br>
+  Arma longa: FOR
+  <br><br>
+  Arma curta:	DES
+  <br><br>
+  Físico: FOR
+  <br><br>
+  Arma de fogo: DES
+  <br><br>
+  Arma arcaica: DES / FOR
+  <br><br>
+  Lança: DES
+  <br><br>
+  Canalizador: INT
+  <br><br>
+  Gadanhas: FOR / INT
+  <br><br>
+  Peculiaridade: Qualquer atributo
+  <br><br>
+Para cada 2 nos atributos básicos a maestria ganha +1, esse aumento não alterado por buffs de outras habilidades como por expemlo a dragon force que aumenta os atributos não alterarão as maestrias.<br><br>
+No começo da campanha o personagem ganha 25 "pontos" de maestria para distribuir em quantas ou quais maestrias quiser, decidindo sua maestria inicial.<br><br> 
+Ademais, as maestrias por sí só possui um limite igual a 100 vezes a classe.<br><br>
+As habilidades são extremamente semelhantes ao ataque, causando um dano fixo em casos de acerto, porém o dano das habilidades é calculado através de uma porcentagem descrita na parte de dano da habilidade, por exemplo: você possui a habilidade "Lanza del relampago" que em sua descrição tem dano equivalente a 200% (digamos que você possua 40 de ataque), o dano causado será 200% de 40, que seria um total de 80. Além disso, as habilidades são calssificadas como alvo único ou em área, isso é o número de pessoas que possam ser afetadas por tal habilidade.</p>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Vantagem e desvantagem</strong></p>
+<br>
+<p>Vantagens ao contrario do convencional você não rolará dados a mais, mas sim rolará seu dado com +25 +10 vezes o número da classe, +50 +10 vezes o número da classe para vantagens superiores e +100 +10 vezes o número da classe para vantagens absolutas.
+<br><br>
+Desvantagens seguem os mesmos padrões, rolando -25 -10 vezes o número da classe, -50 -10 vezes o número da classe para desvantagens superiores e -100 -10 vezes o número de classe.</p>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>C.A:</strong></p>
+<br>
+<p>A C.A é dividida entre esquiva e bloqueio, são bem intuitivas. Enquanto a esquiva tem seu valor igual a DES, o bloqueio tem seu valor igual a CON. Ademais, a existencia de bônus tanto em esquiva quanto em bloqueio pode ser adicionada em um espaço próprio para que o valor original não se perca.
+<br><br>
+A esquiva/bloqueio deve ser rolado sempre que for atacado, e deve-se tirar sempre um resultado maior que o do oponente para que se tenha um sucesso.
+<br>
+<br> 
+A diferença dos dois se dá porque, enquanto durante a esquiva o alvo não encosta em você, durante o bloqueio você recebe o ataque, mas não recebe dano. Além disso, ao esquivar pode usar sua reação para atacar com um ataque básico, mas durante o bloqueio pode realizar um ataque básico sem a necessidade de gastar a reação.</p>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Iniciativa:</strong></p>
+<br>
+<p>A ordem de iniciativa é baseada em uma série de prioridades. A prioridade deve ser seguida conforme está descrito abaixo:
+<br><br>
+1° - Distância:
+<br><br>
+A distância é a prioridade na hora de decidir a ordem, quem possuir a área maior ataca primeiro, independentemente da velocidade. A ordem se define assim: "Vasto > Gigante > Grande > Médio > curto", respectivamente em ordem de vantagem. A área é referente a sua ação, se for realizar uma ação que não é baseada em uma habilidade, a área a ser usada é a pertencente ao próprio personagem, mas se for utilizado de alguma habilidade, a área a ser avaliada é a descrita pela habilidade. Por Rp cada área tem um tamanho em metros...: 
+<br><br>
+Vasto: 1Km ou mais 
+<br>
+Gigante: 500m à 999m 
+<br>
+Grande: 100m à 499m 
+<br>
+Médio: 20m à 99m 
+<br>
+Curto: Menor que 19m
+<br><br>
+2° - Velocidade:
+<br><br>
+Caso a distância de alguém seja igual a outra, outro quesito a ser avaliado é a velocidade. Quem possuir maior velocidade tende a agir primeiro.
+<br><br>
+3° - Sorte:
+<br><br>
+Em casos raros de a área e a velocidade serem iguais, decidi-se a ordem através de 1d100, quem possuir um dado maior começa atacando.</p>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+  <p class="mec"><strong>Distância:</strong></p>
+  <br>
+  <p>A distância defina de quão longe você pode interferir sobre seus alvos durante um combate e funciona de modo a se equiparar a um grid, transformando as medidas de metros para o nome de alguma distância: </p>
+  <br><br>
+Vasto: 1Km ou mais 
+<br>
+Gigante: 500m à 999m 
+<br>
+Grande: 100m à 499m 
+<br>
+Médio: 20m à 99m 
+<br>
+Curto: Menor que 19m
+<br><br>
+<p>Usando a tabela como comparação... ao dizer que seu inimigo está à 500m de você, significa que tu precisas ter algo de alcance gigante ou maior para alcança-lo, da mesma forma que dizer que se um inimigo está à 20m de distância, você precisa ter um alcance curto ou maior para alcança-lo. Lembre-se que qualquer distância à cima de 1km é sempre considerado como vasto, a menos que o mestre considere a batalha acabada.
+  <br>
+  <br>
+  A distância de alguém é sempre definida através de sua destreza, para cada 100 no atributo de destreza você aumenta a sua distância base em 1 alcance maior. Além disso, o alcance das habilidades sempre substitui o seu alcance base. 
+  <br>
+  <br>
+  Algumas habilidades com alcances grandes podem te deixar cara-a-cara como oponente, em casos assim, considere sempre a nova distância entre a sua atual e a do oponente, por exemplo: Caso resolva usar uma habilidade de dash com alcance grande, errando ou acertando, você agora está frente-a-frente com o alvo, então precisará de um alcance curto ou maior para bate-lo.
+</p>
+  <br>
+  <hr/>
+  </div>
+<br>
+<div class="mecanic">
+  <p class="mec"><strong>Zonas:</strong></p>
+  <br>
+  <p>Existem três tipos de zonas que um jogador poderia estar: Neutro, seguro, perigo.
+  <br><br>
+  Neutro: Se estiver numa zona neutra, significa que nem voce, nem o seu oponente consegue atacar.
+  <br><br>
+  Seguro: Se estiver em uma zona segura, significa que voce pode atacar seu oponente, mas seu oponente não pode.
+  <br><br>
+  Perigo: Se estiver em uma zona de perigo, significa que seu oponente pode atacar voce, mas que não necessariamente voce consegue atacar ele.</p>
+  <br>
+  <hr/>
+  </div>
+  <br>
+<div class="mecanic">
+<p class="mec"><strong>Fuga:</strong></p>
+<br>
+<p>A ação de fuga pode ser realizada ao custo de uma ação padrão, porém pode ser usada somente uma vez ao turno, mesmo se tiver mais ações para fazer. A fuga aumenta a distância necessária para atacar voce, por exemplo: Voce e seu inimigo tem distâncias curtas e voce está em uma zona de perigo e usa a ação fugir, para poder ser atacado ao invéz de uma área curta ele iria precisar de uma área média para poder atacar.
+<br><br>
+A ação de perseguir é a contraparte da fuga, e assim como tal pode ser usado somente uma vez por turno, e contrário a fuga, perseguir reduz a distância necessária para um ataque.</p>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Danos superiores:</strong></p>
+<br>
+<p>Danos superiores são danos elementais naturais que conhecemos, porém eles possuem um efeito extremamente mais forte que o normal que faz com que imunidade à esses elementos seja inútil, porém ainda sim seu dano pode ser reduzido ao máximo de 50% (metade). Quando usado contra inimigos que possuem fraqueza contra o elemento, o inimigo recebe um efeito característico do elemento com 100% de chance, por exemplo: Um ataque de fogo superior que for usado contra alguém com fraqueza a fogo ele automaticamente causa o estado de queimadura, mesmo que não esteja na descrição da habilidade, como um efeito adicional.
+<br><br>
+Quando uma habilidade tiver na descrição alguma condição e o inimigo tiver fraqueza ao elemento essa condição vira uma condição superior.</p>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Condições superiores:</strong></p>
+<br>
+<p>As condições superiores causam o mesmo efeito de condições características de elementos normais, tendo apenas mudança em seu dano e duração.
+<br><br>
+Condições que causam dano passam a causar o dobro de dano. 
+<br><br>
+Condições que não causam dano ou que causem dano e causam perda da rodada do inimigo apenas tem seu tempo de duração estendida em 1 rodada.</p>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Engenho:</strong></p>
+Engenho nada mais é do que algumas séries de ações que são literalmente engenhosas. Elas costumam ser ações mais específicas e que por isso sofrem alguma penalidade na hora de realiza-las, porém ao concretiza-las receberá um benefício específico por isso, por ser meio limitante, as ações específicas estarão descritas abaixo:
+<br><br>
+Pressionar: Pressionar alguém contra a parede ou contra o chão.
+<br>
+Penalidade: Desvantagem no acerto.
+<br>
+Benefício: Desvantagem superior no acerto do inimigo pressionado.
+<br><br>
+Flanquear: Quando coloca o inimigo em uma situação de cerco com um aliado.
+<br>
+Penalidade: Tem que estar a uma distância curta do inimigo.
+<br>
+Benefício: Desvantagem no acerto do inimigo enquanto flanqueado.
+<br><br>
+Finta: Fazer algum movimento que engane o oponente.
+<br>
+Penalidade: Ambos devem rolar "influência", se o inimigo tirar um dado menor ele será fintado, em caso do inimigo tirar um dado maior, não sofrerá nada e você receberá desvantagem nesse acerto.
+<br>
+Benefício: Esse ataque tem 20% de taxa crítica à mais e vantagem.
+<br><br>
+Desistabilizar: Quando for quebrar sua defesa, ou tentar desequilibrar o oponente.
+<br>
+Penalidade: Desvantagem nesse acerto.
+<br>
+Benefício: O oponente receberá desvantagem superior na esquiva e bloqueio.
+<br><br>
+Golpe letal: Ao acertar um ponto vital.
+<br>
+Penalidade: Desvantagem absoluta no acerto.
+<br>
+Benefício: Crítico garantido + 25% da vida máxima do alvo como dano fixo extra.
+<br><br>
+Desarme: Ao desarmar um oponente.
+<br>
+Penalidade: Desvantagem no acerto.
+<br>
+Benefício: Desarma o oponente.
+<br><br>
+Derrubar: Quando for derrubar um oponente.
+<br>
+Penalidade: Desvantagem superior no acerto.
+<br>
+Benefício: +20% de taxa crítica e vantagem no próximo acerto.
+<br><br>
+Aparar(parry): Quando for defender um ataque sem "segura-lo".
+<br>
+Penalidade: Desvantagem na esquiva e bloqueio, só pode ser usada quando for atacado.
+<br>
+Benefício: Vantagem no próximo acerto.
+<br><br>
+Prensar: Quando dois aliados realizarem ataques ao mesmo tempo em direções opostas.
+<br>
+Penalidade: Ambos devem rolar o acerto, só dará certo se os dois acertarem e a diferença de dados entre os dois aliados for menor 100 + 10 por classe.
+<br>
+Benefício: Nesse ataque o alvo sofrerá 125% de dano extra dos dois ataques + 100% de cada ataque por classe a cima de 1. Exemplo: 2 aliados de classe 2 causarão cada um: 125% +100%.
+<br><br>
+Clash: Quando há um encontro de técnicas tantos físicas tanto mágicas, caso não sejam técnicas constantes o inimigo poderá recusar o clash.
+<br>
+Penalidade: Só pode ser usado quando atacado, e não poderá voltar atrás.
+<br>
+Benefício: Contra-ataca instântaneamente.
+<br>
+Efeito: Um clash funciona de tal forma: Ambos calculam o dano sem necessidade de um acerto, podendo sacrificar mana aumentar o dano (para cada 2 de mana aumenta o dano em 1), o ataque que tiver mais dano acaba ganhando. Em caso de vitória causará o dano total no alvo e não receberá dano nenhum.
+<br><br>
+Arremessar: Quando arremessa um openente para alguma direção sem o uso de alguma habilidade.
+<br>
+Penalidade: Reduz o dano causado em 25%.
+<br>
+Benefício: Aumenta a distãncia entre os dois em 1 passo para cada 100 de diferença entre a sua força e a constituição inimiga.
+<br><br>
+Agarrão: Quando você agarra um inimigo.
+<br>
+Penalidade: Desvantagem superior no acerto, caso erre o oponente causará 50% de maestria como dano. Além disso você não poderá realizar outra ação.
+<br>
+Benefício: O alvo não poderá fugir, ou atacar com nada que precisa de gestos e recebe Desvantagem superior em acerto e desvantagem absoluta em esquiva e bloqueio.
+<br>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+  <p class="mec"><strong>Crítico:</strong></p>
+  <br>
+  Crítico é um acerto muito mais efetivo que o comum, tornando-se mais poderoso em dano, normalmente causando danos massivos ao oponente que o sofrer. Crítico acontece após você ter acertado um ataque, portanto ele não interfere na sua taxa de acerto e sim o quão forte esse acerto é, ele é decidido em um d100, sendo levado em consideração a taxa crítica do indivíduo, por exemplo: alguém com 15% de taxa crítica deve tirar abaixo de 15 no d100 para ter um acerto crítico. A taxa crítica padrão de todos é de 5%, mas pode ser aumentada até um máximo de 80%. O dano crítico base é 1,5x, ou seja multiplica o dano final causado por 1,5x, mas pode ser aumentado até um limite de 3x.
+  <br>
+  
+  <br>
+  <hr/>
+  <br>
+  <div class="mecanic">
+    <p class="mec"><strong>Clímax:</strong></p>
+  A sorte pode ser usada em batalha, mas apenas 1 vez por batalha... Essa ação chamada de <b>climax</b> tem duas variantes e só pode ser usada no momento em que for sofrer um golpe fatal (o último golpe antes da morte), exigindo um teste de sorte comum tendo como dificuldade o resultado do teste de sorte do oponente, em caso de sucesso (Climax de esplêndor) você evita o golpe e todas as suas consequências, ou em caso de falha (Cilmax de catástrofe), você recebe o dano e perde vida máxima igual ao dano excedente, o valor excedente não pode passar de 25% da vida máxima.
+  </div>
+  <br>
+  <br>
+  <hr/>
+<div class="mecanic">
+<p class="mec"><strong>Técnicas de sensibilidade:</strong></p>
+<br>
+<p>No mundo há três formas de se perceber alguém, dentre elas estão a alma, a mana e o ki. Para sentir a alma você usa a pressão espiritual, tal qual é capaz de medir a determinação de uma pessoa, ou a força de vontade com base em qualquer um de seus desejos, energias que se equivalem a força de seu espírito, refletindo em uma maior pressão espiritual. Para sentir a mana é muito comum a utilização de algo mágico para isso, uma mana eleveda indica a capacidade mágica da pessoa, não levando em consideração a força de espírito ou sua aura. Para sentir a força física de alguém, utilizamos o ki, que representa a força física em base na sua densidade de aura. Ademais, cada energia lhe proporciona a capacidade da realização de alguns truques:
+<br><br>
+A pressão espiritual lhe permite intimidar uma presença mais fraca, às vezes paralisando-a.
+<br><br>
+A mana lhe permite saber da essência de alguém podendo descobrir suas afinidades elementais.
+<br><br>
+O ki lhe permite que por mais baixa que seja sua pressão espiritual ou se a mana seja inexistente,  se estiver invisivel ou em outro plano você sempre conseguirá localizar a pessoa.</p>
+<br>
+<br>
+<hr/>
+</div>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Técnicas de furtividade:</strong></p>
+<br>
+<p>No mundo, assim como existem técnicas de percepção de seres, cada uma possui um método de se esconder. Os métodos de se camuflar nunca lhe deixarão realmente imperceptivel, sempre deixando uma brecha, dentre elas estão:
+<br><br>
+- Manakāten:
+<br>
+Essa lhe permite esconder seu ki e sua pressão espiritual, porém você eleva sua mana, fica vúlneravel a percepção através da mana.
+<br><br>
+Para executa-la é necessário um teste de INT e P.M onde deve-se tirar P.M maior do que INT, ex:
+<br>
+Teste de INT: 1d210+30 e obtém como resultado 120. 
+<br>
+Teste de P.M: 1d210+35 e obtém como resultado 125.
+<br>
+Neste caso seria um sucesso. 
+<br><br>
+- Ōrakāten:
+Essa lhe permite esconder sua pressão espiritual e a mana criando uma espécie de concha ao elevar sua aura, que também fica vísivel (parecendo um super sayajin), fica vúlneravel a percepção através do ki.
+<br><br>
+Para executa-la é necessário um teste de FOR e DES onde deve-se tirar DES maior do que força, ex:
+<br>
+Teste de FOR: 1d210+30 e obtém como resultado 120. 
+<br>
+Teste de DES: 1d210+35 e obtém como resultado 125.
+<br>
+Neste caso seria um sucesso.
+<br><br>
+- Darumakāten:
+<br>
+Essa técnica lhe permite exconder sua mana e sua aura, quando se eleva a pressão espiritual alta retorce a visão que os outros tem delas, fica vúlneravel a percepção através da pressão espiritual.
+<br><br>
+Para executa-la é necessário um teste de CON e CAR onde deve-se tirar CAR maior do que CON, ex:
+<br>
+Teste de CON: 1d210+30 e obtém como resultado 120. 
+<br>
+Teste de CAR: 1d210+35 e obtém como resultado 125.
+<br>
+Neste caso seria um sucesso.</p>
+<br>
+<br>
+<hr/>
+</div>
+<h1>Iniciando</h1>
+<br>
+<br>
+<div class="mecanic">
+<p class="mec"><strong>Atributos:</strong></p>
+<br>
+Os atributos são a base para todo o seu personagem, sendo responsável por seus acertos, danos, vida, mana... eles são divididos em 3 grandes grupos, são eles: Mente, Corpo e Alma.
+<br><br>
+Os atributos iniciais são equivalentes aos atributos mínimos de cada classe, porém se calcula algusn pontos que podem ser somados junto a esses atributos, os pontos são decididos através de "1d10" +"1d5+2" por classe a cima de 1 (classe 1 não ganha esse bônus de +10), levando sempre em consideração o limite que se pode ter nos atributos de cada classe, esses pintos podem ser distribuídos do jeito que achar melhor, não podendo apenas ser colocado na "sanidade" e na "sorte". Esses pontos são readquiridos ao subir de classe no decorrer da campanha.
+<br><br>
+<h2>Mente:</h2> 
+<h3>São atributos que usam como base a mentalidade e o raciocinio do personagem, seus atributos são:</h3>
+<br>
+<br><br>
+Inteligência: é o atributo que se usa para ocasiões onde requer o raciocinio lógico, tais quais como robótica, análise de ítens técnológicos, compreender línguas...
+<br><br>
+Mágia: É o atributo que será usado para fins mágicos, tais quais como análise de ítens mágicos, compreensão de magias e habilidades, controle de mana... Esse atributo também é aquele que compõe o seu dano mágico, quanto maior seu atributo de mágia, maior será o dano de suas mágias.
+<br><br>
+Influência: É o atributo que é usado para todas as ações sociais, seja ela persuadir, assustar, enganar, engajar, encorajar, ou seja lá de que outra forma quiser influênciar algo em alguém.
+<br><br>
+Sanidade: É o atributo vital que está relacionado a saúde de sua mente. Se ela zerar, como um dos 3 atributos vitais, você acabará perdendo o personagem. A sanidade diferentemente dos outros atributos é decidido por uma rolagem de dados igual a 4d20+20, um valor fixo que não é aumentado e nem reduzido por métodos convencionais. Para cada vez que sua sanidade diminuir e atingir uma certa marca, ganhará um malefício condizente com o valor atual da sua sanidade.
+<br><br>
+<h2>Corpo:</h2>
+<h3>São atributos que usam como base o corpo e os sentidos físicos do seu personagem, são eles:</h3> 
+<br><br>
+Força: É o atributo que está ligado a sua força física, usado para mover objetos, empunhar armas, quebrar coisas...
+<br><br>
+Destreza: É o atributo que está ligado a sua velocidade, usado para se esquivar de coisas, acertar ataques (tantos físicos, tanto mágicos), truques com as mãos...
+<br><br>
+Sentidos: É muito usado para perceber coisas, nisso seria, ouvir sons, ver coisas, perceber mentiras, intuir armadilhas e até sentir outras pessoas...
+<br><br>
+Constituição: É o atributo vital que está relacionado ao corpo, diferentemente dos outros atributos vitais, ele por sí só lhe dará bônus, pois é ele quem define sua vida, quanto maior for sua constituição, maior será a sua vida. Como um atributo vital, se ele zerar você acaba morrendo.
+<br><br>
+<h2>Alma:</h2> 
+<h3>São atributos que usam como base a sua alma e os aspcetos abstratos e intangiveis do seu persoangem, são eles:</h3>
+<br><br>
+Energia: É o atributo que define o quanto de energia tem no seu corpo, no caso, quanto maior for esse atributo, maior será a sua mana.
+<br><br>
+Aura: É o atributo que definirá a força e o controle da sua aura. Esse atributo é usado para definir o dano de habilidades que são provenientes da sua alma e da aura que exala, tais como a força de suas técnicas de nen, taques de stands e outros ataques que se originam da alma.
+<br><br>
+Sorte: É o atributo que representará a sua sorte. A sorte, assim como a sanidade é decidida por um dado diferente, sendo esse "2d10+10", esse atributo também não sofrerá alterações por meios mundanos. Ele é usado para todas as situações que dependem da pura sorte, tais como jogos de azar e entre outros. Um teste de sorte sempre é repesentado por 1d100+Sorte, com o resultado sempre devendo superar a dificuldade decidida pelo mestre.
+<br><br>
+Essência: É o atributo vital que está ligado a sua alma, diferente das outras, ela não lhe causa preojuizo e nem benefício quanto a seu valor. A essência representa a sua identidade em relação ao existêncialismo, pode ser vista também ao seu conceito, exemplo: quando alguém morre, todos se lembram, mas quando a essência acaba, ninguém se lembrará de você, porque a sua essência foi apagada, logo, o seu ser deixou de existir no passado, presente e futuro. Assim como os outros atributos vitais, se zerado causará a sua morte. A essência inicial é 100, e não há métodos de recuperar-se naturalmente.
+</p>
+<br>
+<br>
+<hr/>
+</div>
+<br>
+  <div class="mecanic">
+    <p class="mec"><strong>Vida e mana:</strong></p>
+  Tanto a vida e a mana são decididos por uma calculo que se baseia na classe atual de cada um, enquanto o calculo para vida se usa "constituição" o calculo de mana se usa "energia", mas ambos seguem essa fórmula: 
+  <br>
+  <br>
+  Nº = Número da classe.
+  <br><br>
+  <b>Para vida:</b>
+  <br>
+  Nº * Constituição
+  <br>
+  <br>
+  <b>Para mana:</b>
+  <br>
+  Nº * Energia
+  <br>
+  <br>
+  <hr/>
+  </div>
+  <br>
+  <div class="mecanic">
+    <p class="mec"><strong>Raça:</strong></p>
+  Cada raça começa com uma habilidade racial, tal qual é composta por um conjunto de outra pequenas habilidades que a raça tem dentro de seu verso de origem. Por exemplo: A raça vampiro, ela está presente em inúmeras obras e possui habilidades especiais que compartilham entre sí, como a capacidade de virar morcego, porém em versos específicos pode acabar tendo uma habilidade mais específica, como em Hellsing, onde Alucard tem uma metamorphose única e peculiar que vampiros de alta classe deveriam ter, nesse caso considera-se apenas habilidades raciais que a raça tem no verso de origem, no caso o Alucard não conseguiria usar o prórpio sangue para moldar armas, que é uma habilidade comum entre os vampiros de "Eminence in shadow".  
+  <br><br>
+  Lembrando que embora a habilidade racial é um aglomerado de habilidades que aquele raça consegue fazer, ela pode conter algo mais único SE for estritamente algo racial. 
+  <br><br>
+  <hr/>
+  </div>
+</fieldset>
+</body>
+</html>
