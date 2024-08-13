@@ -1,5 +1,5 @@
 body {
-    background-image: url(fundao.gif);
+    background-image: url(imagens/fundao.gif);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: contain;
@@ -84,35 +84,35 @@ body {
 }
 
 .genti {
-    top: 105px;
+    top: 245px;
     right: 30px;
 }
 .bravu {
-    top: 160px;
+    top: 460px;
     right: 58px;
 }
 .inte {
-    top: 213px;
+    top: 713px;
     right: 86px;
 }
 .pac {
-    top: 264px;
+    top: 1110px;
     right: 115px;
 }
 .perse {
-    top: 319px;
+    top: 1379px;
     right: 144px;
 }
 .jus {
-    top: 374px;
+    top: 1614px;
     right: 172px;
 }
 .medo {
-    top: 427px;
+    top: 1864px;
     right: 200px;
 }
 .hate {
-    top: 484px;
+    top: 2206px;
     right: 229px;
 }
 /* Barra de navegação */
@@ -325,69 +325,4 @@ hr {
     height: 100px;
     left: 260px;
     bottom: 120px;
-}
-.nomistake {
-    position:relative;
-    left: 35px;
-}
-
-.elementalm{
-    position: relative;
-    width: 20px;
-    height: 25px;
-    right: 0px;
-    top: 35px;
-}
-#treselen{
-    left:50px
-}
-
-/*elementos*/
-.ign{
-    color: rgb(250, 106, 4);
-    text-shadow: rgb(250, 106, 4) 1px 1px 15px;
-}
-.hyd{
-    color: rgb(5, 102, 182);
-    text-shadow: rgb(5, 102, 182) 1px 1px 15px;
-}
-.sag{
-    color: rgb(248, 250, 119);
-    text-shadow: rgb(248, 250, 119) 1px 1px 15px;
-}
-.esp{
-    color: rgb(74, 238, 216);
-    text-shadow: rgb(74, 238, 216) 1px 1px 15px;
-}
-.ete{
-    color: rgb(2, 169, 199);
-    text-shadow: rgb(2, 169, 199) 1px 1px 15px;
-}
-.mor{
-    color: rgb(95, 95, 95);
-    text-shadow: rgb(95, 95, 95) 1px 1px 15px;
-}
-.som{
-    color: rgb(87, 61, 95);
-    text-shadow: rgb(87, 61, 95) 1px 1px 15px;
-}
-.ele{
-    color: rgb(248, 232, 1);
-    text-shadow: rgb(248, 232, 1) 1px 1px 15px;
-}
-.luz{
-    color: rgb(235, 230, 160);
-    text-shadow: rgb(235, 230, 160) 1px 1px 15px;
-}
-.psi{
-    color: rgb(207, 82, 238);
-    text-shadow: rgb(207, 82, 238) 1px 1px 15px;
-}
-.ven{
-    color: rgb(6, 97, 6);
-    text-shadow: rgb(6, 97, 6) 1px 1px 15px;
-}
-.fis{
-    color: rgb(145, 55, 3);
-    text-shadow: rgb(145, 55, 3) 1px 1px 15px;
 }
