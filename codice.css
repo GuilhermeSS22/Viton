@@ -115,6 +115,125 @@ body {
     top: 2206px;
     right: 229px;
 }
+
+/*resistências */
+.tipo_elem {
+    color:#5ac404;
+    text-shadow: #90eb46 1px 1px 10px;
+}
+.tipo_físico {
+    color:#f03737;
+    text-shadow: #f15353 1px 1px 10px;
+}
+.tipo_energ {
+    color:#28f7f7;
+    text-shadow: #c5f7f7 1px 1px 10px;
+}
+.tipo_caótico {
+    color: #6b03b1;
+    text-shadow: #6b03b1 1px 1px 10px;
+}
+.tipo_vital {
+    color:#b8081f;
+    text-shadow: #db3047 1px 1px 10px;
+}
+.igneo {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:7px;
+}
+.hydro {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:7px;
+}
+.vento {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:7px;
+}
+.gelo {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:7px;
+}
+.eletrico {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:7px;
+}
+.veneno {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:7px;
+}
+.fisico {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:7px;
+}
+.psiquico {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:7px;
+}
+.neter {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:7px;
+}
+.eter {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:7px;
+}
+.luz {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:7px;
+} 
+.sagrado {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:7px;
+}
+.morte {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:7px;
+}
+.sombra {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:7px;
+}
+.vitaly {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:7px;
+}
+.astral
+{
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top:7px;
+}
 /* Barra de navegação */
 .nav {
     list-style-type: none;
