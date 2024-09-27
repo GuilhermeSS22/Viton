@@ -51,43 +51,45 @@
     <br>
     <p class="ss">Elétrico</p>
     <p><strong>Eletrificado:</strong></p>
-    <p>Efeito: Eletrificado dura por 3 turnos e sua duração não pode ser aumentada. Todo turno o alvo deve rolar um teste para tentar dissipar o efeior, em caso de sucesso a condição eletrificado se dissipa, em caso de falha, ganha a condição paralisado.</p>
+    <p>Efeito: Todo inicío de turno o alvo deve realizar um teste de constituição (CD=25xNº da classe de quem aplicou +Magia de quem aplicou), em caso de sucesso remove 1 stack de "eletrificado" em sí mesmo, em caso de falha, ganha a condição paralisado.</p>
     <p><strong>Paralisado:</strong></p>
-    <p>Efeito: O alvo não pode agir e recebe dano equivalente à metade do atributo Magia do conjurador como dano elétrico por 5 turnos.</p>
+    <p>Efeito: 1 vez por turno, ao realizar uma ação, deve realizar um teste de constituição (CD=25xNº da classe de quem aplicou +Magia de quem aplicou), ao falhar a ação não é realizada, mas você gasta os recursos igualmente. Além disso, sofre 25xNº de stacks +25 para cada 50 no atributo de enrgia que o alvo tiver.</p>
+    <p><strong>Choque:</strong></p>
+    <p>Efeito: Todo o final de turno, recebe 50 +100% da.</p>
     <br>
     <br>
     <br>
     <p class="ss">Hydro</p>
     <p><strong>Molhado:</strong></p>
-    <p>Efeito:Reduz a resistência a ígneo, elétrico, Hydro e gelo em 20%.</p>
+    <p>Efeito: Reduz a resistência a ígneo, elétrico, Hydro e gelo em 20%. O efeito dura 1 turno para cada stack que tiver.</p>
+    <p><strong>Afogando:</strong></p>
+    <p>Efeito: O alvo recebe 100% da própria constituição (base) como dano hydro todo o incío de turno. Além disso, para cada stak de "Afogando" que tiver, reduz o atributo de constituição em 2. Esse efeito pode ter no máximo de 10 stacks. Ao atingir o limite, o dano passa à ser hydro superior.</p>
     <br>
     <br>
     <br>
     <p class="ss">Gelo</p>
     <p><strong>Congelado:</strong></p>
-    <p>Efeito: Impossibilita o alvo de agir por um turno, além disso, ganha a condição lentidão por três turnos.</p>
-      <br>
-      <br>
-      <br>
+    <p>Efeito: Impossibilita o alvo de agir por 1 turno, mas receber dano ígneo ou 10% de sua vida máxima fará com que a condição se dissipe, além disso enquanto estiver congelado, auemente a resistência física, hydro e vento em 25% e golpes ígneos ou elétricos tornam-se críticos.</p>
+    <p><strong>Arrepiando:</strong></p>
+    <p>Efeito: Causa 150 de dano de gelo +50 por Stack e reduz a destreza do alvo em 5 por stack. Um máximo de 10 stacks pode ser aplicado. Se o alvo tiver 10 stacks de arrepiando, todos os stacks são removidos e ele sofre o dano de todos os Stacks +250 de dano verdadeiro, além disso ele fica congelado por 1 turno.</p>
+    <br>
+    <br>
+    <br>
     <p class="ss">Veneno</p>
     <p><strong>Envenenado:</strong></p>
-    <p>Efeito: Alguém envenenado recebe um dano X até achar uma cura.</p>
+    <p>Efeito: Alguém envenenado recebe um dano X por turno até achar uma cura.</p>
+    <p><strong>Debilitado:</strong></p>
+    <p>Efeito: Reduz um x atributo em 1 por stack, até um máximo de 20. Essa redução dura até o fim da mesa.</p>
     <br>
     <br>
     <br>
     <p class="ss">Ígneo</p>
     <p><strong>Queimadura:</strong></p>
     <p>Efeito: O alvo recebe 50% do atributo de magia de dano por turno ao longo de 2 turnos, além disso sempre que for aplicado novamente, aumenta a duração em 1 turno, não podendo exceder os 2 turnos de duração. Reduz a regeneração em 100x o valor dos turnos restantes. O dano não pode exceder o valor de 250.</p>
-    <br>
-    <br>
     <p><strong>Chama:</strong></p>
     <p>Efeito: O alvo recebe 100% do atributo de magia de dano por turno ao longo de 3 turnos, além disso sempre que for aplicado novamente, aumenta a duração em 1 turno, não podendo exceder os 3 turnos de duração. Reduz toda a cura em 100x o valor dos turnos restantes. O dano não pode exceder  o valor de 500.</p>
-    <br>
-    <br>
     <p><strong>Incendiar:</strong></p>
     <p>Efeito: O alvo recebe o dobro do atributo de magia de dano por turno ao longo de 4 turnos, além disso sempre que for aplicado novamente, aumenta a duração em 1 turno, não podendo exceder os 4 turnos de duração. Reduz toda a cura em 200x o valor dos turnos restantes. O dano não pode exceder o valor de 750.</p>
-    <br>
-    <br>
     <p><strong>Ignição:</strong></p>
     <p>Efeito: O alvo recebe o dobro do atributo de magia de dano verdadeiro por turno ao longo de 5 turnos, além disso sempre que for aplicado novamente, aumenta a duração em 1 turno, não podendo exceder os 5 turnos de duração. Reduz a regeneração em 200x o valor dos turnos restantes. O dano não pode exceder o valor de 1.000.</p>
     <br>
@@ -133,8 +135,11 @@
     <br>
     <br>
     <p class="ss">Espiritual</p>
-    <p><strong>Amaldiçoado:</strong></p>
+    <p><strong>Assombrado:</strong></p>
     <p>Efeito: Todo o dano causado ao alvo, terá 10% de seu dano redirecionado a vida máxima. Esse efeito dura 3 turnos +1 turno por stack.</p>
+    <p><strong>Amaldiçoado:</strong></p>
+    <p>Efeito: O alvo recebe 50 dano verdadeiro por stack, além de perder 2 nos atributos por stack, toda a cura recebida é reduzida pela metade. A duração não pode ser aumentada e possuií um limite de 10 stacks. 
+    </p>
     <br>
     <br>
     <br>
@@ -157,7 +162,7 @@
     <br>
     <br>
     <p><strong>Ferida ebânea:</strong></p>
-    Efeito: O alvo que for afetado por ferida ebânea sofre 25% da maestria + 50 como dano verdadeiro. Sempre que o alvo tiver mais de uma ferida ebânea os efeitos dos demais são aplicados ao mesmo tempo e de maneira separada, por exemplo: 2 stacks = 50% da maestria +100 como dano verdadeiro. Além disso ferida ebânea não pode ser curada e não pode ser removida.
+    Efeito: O alvo que for afetado por ferida ebânea sofre 20% da maestria +100 como dano verdadeiro. Sempre que o alvo tiver mais de uma ferida ebânea os efeitos dos demais são aplicados ao mesmo tempo e de maneira separada, por exemplo: 2 stacks = 40% da maestria +200 como dano verdadeiro. Além disso ferida ebânea não pode ser curada e não pode ser removida, para cada stack de ferida ebânea reduza a cura recebida pelo alvo em 250.
     <br>
     <br>
     <br>
@@ -172,7 +177,7 @@
     <br>
     <br>
     <p><strong>Wither:</strong></p>
-    Efeito: Toda a alteração da vida recebido será ocultado, além disso, você levará X dano por turno, ademais qualquer condição aplicada será ocultada e terá sua potencia dobrada. Esse efeito dura 5 turnos e +1 turno por stack.
+    Efeito: Toda a alteração da vida recebido será ocultado, além disso, você levará X dano por turno, ademais qualquer condição aplicada será ocultada e terá seu dano aumentado em 50xNº de stacks de "Wither" que o alvo tiver. Esse efeito dura 5 turnos e +1 turno por stack.
     <br>
     <br>
     
@@ -182,12 +187,12 @@
     <br>
     <br>
     <p><strong>Extinção:</strong></p>
-    Efeito: Para de receber vida de todas as fontes por 15 turnos, se for morto nesse período não poderá ser ressuscitado de nenhuma forma, ademais qualquer condição que o usuário for exposto, será um sucesso.
+    Efeito: Se for morto nesse período não poderá ser ressuscitado de nenhuma forma, ademais qualquer condição que o usuário for exposto, será um sucesso. A duração da extinção é 5 turnos mas aumente +1 para cada 10% de vida faltante no alvo.
     <br>
     <br>
     <br>
     <p><strong>Stun:</strong></p>
-    Efeito: Fica impossibilitado de agir. Não pode ser stackado e seu efeito não pode ser extendido.
+    Efeito: Fica impossibilitado de agir. Não pode ser stackado e seu efeito não pode ser extendido, durante stun qualquer teste de esquiva/bloqueio tem desvantagem superior.
     <br>
     <br>
     <br>
@@ -202,7 +207,7 @@
     <br>
     <br>
     <p><strong>Corvo Fantasma:</strong></p>
-    Efeito: O alvo sofre 50% da maestria por turno, durante 10 turnos. Sempre que for aplicado novamente, aumenta a duração em 1 turno e causa 50% da maestria instântaneamente. Além disso quem tentar retirar o efeito sofre do mesmo.
+    Efeito: O alvo sofre 50% da sua maestria por turno, durante 10 turnos. Sempre que for aplicado novamente, aumenta a duração em 1 turno e causa 50% da maestria instântaneamente. Além disso quem tentar retirar o efeito sofre do mesmo.
     <br>
     <br>
     <br><p><strong>Tormenta fantástica:</strong></p>
@@ -212,12 +217,12 @@
     <br>
     <br>
     <p><strong>Ficar Roxo:</strong></p>
-    Efeito: O alvo Recebe o dobro de dano para acertos críticos. Dura até o final da batalha ou até recuperar.
+    Efeito: O alvo Recebe o dobro de dano para acertos críticos. Dura até o final da batalha ou até recuperar 500+100xNº da classe como vida.
     <br>
     <br>
     <br>
     <p><strong>Teimoso:</strong></p>
-    Efeito: Quando o efeito é aplicado, o primeiro efeito negativo que for removido de maneira forçada será aplicado novamente. Esse efeito dura 3, mas reduza em 1 turno para cada efeito que reaplicar (só pode ser ativado 1 vez por turno).
+    Efeito: Quando o efeito é aplicado, o primeiro efeito negativo que for removido de maneira forçada será aplicado novamente. Esse efeito dura 3 turnos, mas reduza em 1 turno para cada efeito que reaplicar (só pode ser ativado 1 vez por turno).
     <br>
     <br>
     <br>
@@ -237,12 +242,12 @@
     <br>
     <br>
     <p><strong>Gravura de sangue:</strong></p>
-    Efeito: Recebe 200 de dano como dano verdadeiro, o dano sofrido por essa condição é convertido em vida para quem o aplicou. Não pode ser removido. Dura por 2 turnos, não pode ser aplicado novamente enquanto o alvo ainda estiver sofrendo de "gravura de sangue".
+    Efeito: Cause 200 +50% da constituição do alvo como dano verdadeiro, o dano sofrido por essa condição é convertido em vida para quem o aplicou. Não pode ser removido. Dura por 2 turnos, não pode ser aplicado novamente enquanto o alvo ainda estiver sofrendo de "gravura de sangue".
     <br>
     <br>
     <br>
     <p><strong>Restrição:</strong></p>
-    Efeito: Causa "lentidão" por 2 turnos e enquanto tiver lentidão, todo o turno há 50% de chance de sofrer com "enraizamento". Esse efeito não pode ser aplicado enquanto o alvo já estiver sofrendo do mesmo.
+    Efeito: Causa "lentidão" por 2 turnos. Enquanto tiver lentidão todo o turno há 50% de chance de sofrer com "enraizamento". Esse efeito não pode ser aplicado enquanto o alvo já estiver sofrendo do mesmo.
     <br>
     <br>
     <br>
@@ -252,7 +257,7 @@
     <br>
     <br>
     <p><strong>Estigma:</strong></p>
-    Efeito: Uma ferida causada a alma. Causa 200 de dano verdadeiro e reduz a vida máxima pelo mesmo valor (a vida máxima reduzida é recuperada ao fim da mesa). Não é considerado dano prolongado e não pode ser aplicado mais de 1 vez em um alvo por turno. 
+    Efeito: Uma ferida causada a alma. Causa 200 +100% da aura por turno de dano verdadeiro e reduz a vida máxima pelo mesmo valor (a vida máxima reduzida é recuperada ao fim da mesa). Não é considerado dano prolongado e não pode ser aplicado mais de 1 vez em um alvo por turno. 
     <br>
     <br>
     <br>
@@ -267,7 +272,7 @@
     <br>
     <br>
     <p><strong>pressão:</strong></p>
-    Efeito: Números terminados em 0 e 5 também contam para acerto de combo. 
+    Efeito: Quando acertar um alvo sobre o efeito de "Pressão", números terminados em 0 e 5 também contam para acerto de combo. O efeito de pressão desaperece no final de seu turno.
     <br>
     <br>
     <br>
@@ -276,18 +281,53 @@
     <br>
     <br>
     <br>
+    <p><strong>Irrecuperável:</strong></p>
+    Efeito: Reduz toda a cura recebida à 0. Quando receber cura de qualquer fonte cause 50% da magia (Do conjurador) como dano vitally para cada stack de irrecuperável. Pode ter no máximo de 5 stacks.
+    <br>
+    <br>
+    <br>
+    <p><strong>Bomba:</strong></p>
+    Efeito: Causa 50% da magia como dano ígneo por stack.
+    <br>
+    <br>
+    <br>
+    <p><strong>Pânico:</strong></p>
+    Efeito: Não pode acertar golpes críticos e tem tanto a sua esquiva quanto o seu bloqueio reduzidos em 50. Não pode ser stackado. Esse efeito perdura por 2 turnos.
+    <br>
+    <br>
+    <br>
+    <p><strong>Chama verdadeira:</strong></p>
+    Efeito: A resistência ígnea do alvo é reduzida em 50%, além disso sempre que o alvo sofrer dano de “Queimando”, “Chama”, “incendiar” e “ignição”, cause dano extra igual 20% da magia para queimando, 50% para chama, 100% para incendiar e 150% para ignição. Stacks extras apenas aumentam a duração, não possuí um máximo de stacks. Esse efeito é tratado como dano prolongado ígneo.
+    <br>
+    <br>
+    <br>
+    <p><strong>Destruição:</strong></p>
+    Efeito: Reduz a maestria de um item em 25 permanente, se houver 5 stacks de de "destruição" em uma arma, esse ítem é destruído. Caso o item não tenha maestria não aplique a redução, mas destrua a mesma se atingir 5 stacks. Se o item conceder bloqueio ou esquiva reduza-o como se fosse a maestria e destrua se atingir 5 stacks.    
+    <br>
+    <br>
+    <br>
 </div>
 <div id="ben">
     <h2>Benignos:</h2>
     <hr/>
+    <br>
+    <p><strong>Cinza vívido:</strong></p>
+    Efeito: Cure 200 +100% da magia por turno, para cada stack à menos do que 5 aumente a cura base em 100. no último turno remova 1 efeito negativo imposto em você.
+    <br>
+    <br>
     <br>
     <p><strong>Inspirado:</strong></p>
     Efeito: O alvo recebe vantagem em todos os dados durante 5 turnos.
     <br>
     <br>
     <br>
+    <p><strong>Fulgor:</strong></p>
+    Efeito: Ganhe 4 stacks de poder enfocado ou poder superfocado ao terminar um turno. Ao sofrer um ataque retire um Stack de poder enfocado ou superfocado,  e sofra 50 de dano verdadeiro (Multihit é contabilizado no máximo de até 5 hits). Não pode ser stackado, e tem duração de 1 turno, para cada vez que adicionar fulgor aumente a duração em 1 turno. Para cada 2 poder enfocado ou superfocado, ganhe +10 de maestria. 
+    <br>
+    <br>
+    <br>
     <p><strong>Tempestade arcana:</strong></p>
-    Efeito: Magias causam 50% de dano à mais para cada stack de tempestade arcana. Perdura por 1 turno, mas aumente em 1 turno para cada 2 stacks de tempestade arcana que tiver, outrora quando os turnos passarem, apenas reduza 1 stack ao invés de remover todos.
+    Efeito: Adicione 50% de dano à mais nas magia para cada stack de tempestade arcana. Perdura por 1 turno, mas aumente em 1 turno para cada 2 stacks de tempestade arcana que tiver, outrora quando os turnos passarem, apenas reduza 1 stack ao invés de remover todos.
     <br>
     <br>
     <br>
@@ -309,18 +349,18 @@
     <br>
     <br>
     <p><strong>Resolução:</strong></p>
-    Efeito: Não pode ter a vida reduzida abaixo de 1.
+    Efeito: Não pode ter a vida reduzida abaixo de 1 enquanto o efeito durar. Remove 1 stack ao final do turno.
     <br>
     <br>
     <br>
     <p><strong>Pureza encantada:</strong></p>
-    Efeito: Transforma condições malignas em benignas, transformando os danos dos efeitos em cura.
+    Efeito: Transforma condições malignas em benignas, transformando os danos dos efeitos em cura. Para cada stack de "Pureza encantada" que tiver troque os efeitos da condição, mas remova um stack de "Pureza encantada".
     <br>
     <br>
     <br>
     <p><strong>Cura maldita:</strong></p>
-    Efeito: O alvo recebe cura equivalente a 10% de sua vida, se o efeito for retirado, causa dano a todos os inimigos
-    e a quem retirou igual a toda cura recebida, ademais, aliados ao redor tem vida recuperada do mesmo valor.
+    Efeito: O alvo recebe cura equivalente a 1% de sua vida, se o efeito for retirado, causa dano a todos os inimigos
+    e a quem retirou igual a toda cura recebida, ademais aliados ao redor tem vida recuperada do mesmo valor.
     <br>
     <br>
     <br>
@@ -330,12 +370,12 @@
     <br>
     <br>
     <p><strong>Fortificado:</strong></p>
-    Efeito: Recebe uma vida adicional equivalente a 25% ou 1/4 de vida.
+    Efeito: Recebe escudo equivalente à 10% da vida máxima.
     <br>
     <br>
     <br>
     <p><strong>Absorção:</strong></p>
-    Efeito: Recupera metade do dano sofrido como vida, menos de outras condições.
+    Efeito: Recupera metade do dano sofrido como vida, menos de outras condições. Para cada golpe recebido reduza 1 stack.
     <br>
     <br>
     <br>
@@ -345,7 +385,7 @@
     <br>
     <br>
     <p><strong>Eloquente:</strong></p>
-    Efeito: Oferece 100 de bônus em influência.
+    Efeito: Oferece 50 de bônus em influência por 2 turnos.
     <br>
     <br>
     <br>
@@ -358,7 +398,6 @@
     Efeito: Recebe 20 de bônus em CON e magia, além disso todo o dano causado se torna sagrado.
     <br>
     <br>
-    
     <br><p><strong>Veloz:</strong></p>
     Efeito: Recebe 20 +10*Nº da classe de aumento nos dados de acerto, e na esquiva.
     <br>
@@ -380,22 +419,27 @@
     <br>
     <br>
     <p><strong>Poder enfocado:</strong></p>
-    Efeito: Adiciona +200% de dano em habilidades de alvo unico.
+    Efeito: Adiciona +200% de dano em habilidades de alvo unico. Para cada stack aumente o dano final causado em 200 por stack, e remova todos os stacks.
     <br>
     <br>
     <br>
     <p><strong>Poder superfocado:</strong></p>
-    Efeito: Adiciona +100% de dano em habilidades com 2 ou mais alvos.
+    Efeito: Adiciona +100% de dano em habilidades com 2 ou mais alvos. Para cada stack aumente o dano final causado em 100 por stack, e remova todos os stacks.
     <br>
     <br>
     <br>
     <p><strong>Abençoado:</strong></p>
-    Efeito: Retira efeitos málignos, e torna o alvo imune por 1 turno.
+    Efeito: Retira efeitos málignos e torna o alvo imune por 1 turno.
     <br>
     <br>
     <br>
     <p><strong>Alerta:</strong></p>
     Efeito: Recebe vantagem em sentidos e em esquiva.
+    <br>
+    <br>
+    <br>
+    <p><strong>Regenerando:</strong></p>
+    Efeito: Cura 200% da constituição do alvo por turno. O número de stacks representa a duração do efeito em turnos, reduzindo 1 stack à cada turno que se passa. Além disso cada stack aumenta a cura recebida em 50% da constituição do alvo.
     <br>
     <br>
     <br>
