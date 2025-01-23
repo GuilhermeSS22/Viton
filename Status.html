@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>habilidades</title>
+  <title>Status</title>
   <link rel="stylesheet" href="codice.css">
 </head>
 <body>
@@ -12,8 +12,8 @@
   <br>
   <ul class="nav">
     <li><a class="nava" href="index.html">Início</a></li>
-    <li><a class="nava" href="fichaluiz.html">Ficha</a></li>
-    <li><a class="nava" href="contact.asp">Mesa</a></li>
+    <li><a class="nava" href="fichakawee.html">Ficha</a></li>
+    <li><a class="nava" href="https://app.roll20.net/editor/">Mesa</a></li>
     <li style="float:right"><a href="codice.html" class="active">Códice</a></li>
     <li><a class="nava" href="about.asp">Mapa</a></li>
     <li><a class="nava" href="about.asp">Lojas</a></li>
@@ -29,1209 +29,622 @@
   <br>
   <fieldset class="field1">
     <h1>Códice</h1>
-<h2>Habilidades</h2>
-<p class="mec"><strong>Habilidades imbutidas:</strong></p>
-<br>
-<p>As habilidades imbutidas são algumas habilidades adquiridas em troca de alguns pontos de melhorias, essa troca só pode ser feita com um ferreiro. A lista de habilidades se encontra abaixo:
-    <br><br>
-    <p><strong>Lâmina tortuosa:</strong></p>
-    Efeito: Quando tirar um crítico troque o dano extra por 5 stacks de "ferida ebânea".
+    <p class="subtitulo">Súmario</p>
     <br>
-    Custo: 5 pontos de melhoria.
     <br>
+    <div>
+      <ul>
+        <il><a class="fielda" href="#ele">Elementais</a></il>
+        <br>
+        <br>
+        <il><a class="fielda" href="#mal">Malignos</a></il>
+        <br>
+        <br>
+        <il><a class="fielda" href="#ben">Benignos</a></il>
+        
+      </ul>
+    </div>
+    <div id="ele">
+    <h2> Penalidades elementais</h2>
+    <hr/>
     <br>
     <br>
-    <p><strong>Maldição de sangue:</strong></p>
-    Efeito: Quando acertar um atque pode escolher pagar 10% da sua vida máxima para causar 1 stack de sangramento.
+    <p class="ss">Elétrico</p>
+    <p><strong>Eletrificado:</strong></p>
+    <p>Efeito: Todo inicío de turno o alvo deve realizar um teste de constituição (CD=25xNº da classe de quem aplicou +Magia de quem aplicou), em caso de sucesso remove 1 stack de "eletrificado" em sí mesmo, em caso de falha, ganha a condição paralisado.</p>
+    <p><strong>Paralisado:</strong></p>
+    <p>Efeito: 1 vez por turno, ao realizar uma ação, deve realizar um teste de constituição (CD=25xNº da classe de quem aplicou +Magia de quem aplicou), ao falhar a ação não é realizada, mas você gasta os recursos igualmente. Além disso, sofre 50xNº de stacks +100 para cada 25 no atributo de energia que o alvo tiver como dano elétrico. Perde 1 stack para cada ação que fizer.</p>
+    <p><strong>Choque:</strong></p>
+    <p>Efeito: Todo o final de turno, recebe 150 +250% da energia como dano elétrico. Ao reber um golpe elétrico cause o dano de 1 stack de choque instântanemante à todos os inimigos dentro de um alcance Médio ao redor do alvo príncipal, para cada alvo acertado por esse efeito, o dano aumenta em 300. O efeito dura 1 turno +1 turno por stack.</p>
     <br>
-    Custo: 3 pontos de melhoria.
     <br>
     <br>
+    <p class="ss">Hydro</p>
+    <p><strong>Molhado:</strong></p>
+    <p>Efeito: Reduz a resistência a ígneo, elétrico, Hydro e gelo em 20%. O efeito dura 1 turno para cada stack que tiver.</p>
+    <p><strong>Afogando:</strong></p>
+    <p>Efeito: O alvo recebe 500% da própria constituição (base) como dano hydro todo o incío de turno. Além disso, para cada stak de "Afogando" que tiver, reduz o atributo de constituição em 5. Esse efeito pode ter no máximo de 10 stacks. Ao atingir o limite, o dano passa à ser hydro superior.</p>
     <br>
-    <p><strong>Benção de sangue:</strong></p>
-    Efeito: Recebe metade do dano de sangramento dos outros como cura.
     <br>
-    Custo: 6 pontos de melhoria.
     <br>
+    <p class="ss">Vento</p>
+    <p><strong>Cisar:</strong></p>
+    <p>Efeito: O alvo recebe 200% da magia +150 por stack de dano de vento por turno, além disso causa 50 de dano extra para cada outro stack de dano prolongado que o alvo tiver. Reduza 1 stack de cisa por turno, além disso "Cisar" tem um limite máximo de 10 stacks.</p>
     <br>
     <br>
-    <p><strong>Multicorte:</strong></p>
-    Efeito: Sempre que atacar força o alvo a rolar teste de esquiva e bloqueio, se passar nos dois causa um dano extra igual a 20%.
     <br>
-    Custo: 1 pontos de melhoria.
+    <p class="ss">Gelo</p>
+    <p><strong>Congelado:</strong></p>
+    <p>Efeito: Impossibilita o alvo de agir por 1 turno, mas receber dano ígneo ou 10% de sua vida máxima fará com que a condição se dissipe, além disso enquanto estiver congelado, auemente a resistência física, hydro e vento em 25% e golpes ígneos ou elétricos sofridos tornam-se críticos.</p>
+    <p><strong>Arrepiando:</strong></p>
+    <p>Efeito: Causa 300 de dano de gelo +100 por Stack e reduz a destreza do alvo em 2 por stack. Um máximo de 10 stacks pode ser aplicado. Se o alvo tiver 10 stacks de arrepiando, todos os stacks são removidos e ele sofre o dano de todos os Stacks +500 de dano verdadeiro, além disso ele fica congelado por 1 turno.</p>
     <br>
     <br>
     <br>
-    <p><strong>Multicorte avançado:</strong></p>
-    Efeito: Sempre que atacar força o alvo a rolar teste de esquiva e bloqueio, se passar nos dois causa um dano extra igual a 50%.
+    <p class="ss">Veneno</p>
+    <p><strong>Envenenado:</strong></p>
+    <p>Efeito: Alguém envenenado recebe um dano X por turno até achar uma cura.</p>
+    <p><strong>Debilitado:</strong></p>
+    <p>Efeito: Reduz um x atributo em 2 por stack, até um máximo de 40. Essa redução dura até o fim da mesa.</p>
     <br>
-    Custo: 3 pontos de melhoria.
     <br>
     <br>
+    <p class="ss">Ígneo</p>
+    <p><strong>Queimadura:</strong></p>
+    <p>Efeito: O alvo recebe 100% do atributo de magia de dano por turno ao longo de 2 turnos por stack, além disso sempre que for aplicado novamente, aumenta a duração em 1 turno, não podendo exceder os 2 turnos de duração. Reduz a regeneração em 200x o valor dos turnos restantes. O dano total de todos os stacks juntos não pode exceder o valor de 1.500.</p>
+    <p><strong>Chama:</strong></p>
+    <p>Efeito: O alvo recebe 200% do atributo de magia de dano por turno ao longo de 3 turnos por stack, além disso sempre que for aplicado novamente, aumenta a duração em 1 turno, não podendo exceder os 3 turnos de duração. Reduz toda a cura em 200x o valor dos turnos restantes. O dano total de todos os stacks juntos não pode exceder o valor de 2.000.</p>
+    <p><strong>Incendiar:</strong></p>
+    <p>Efeito: O alvo recebe 300% do atributo de magia de dano por turno ao longo de 4 turnos por stack, além disso sempre que for aplicado novamente, aumenta a duração em 1 turno, não podendo exceder os 4 turnos de duração. Reduz toda a cura em 250x o valor dos turnos restantes. O dano total de todos os stacks juntos não pode exceder o valor de 2.500.</p>
+    <p><strong>Ignição:</strong></p>
+    <p>Efeito: O alvo recebe 400% do atributo de magia de dano verdadeiro por turno ao longo de 5 turnos por stack, além disso sempre que for aplicado novamente, aumenta a duração em 1 turno, não podendo exceder os 5 turnos de duração. Reduz a regeneração em 250x o valor dos turnos restantes. O dano total de todos os stacks juntos não pode exceder o valor de 3.000.</p>
     <br>
-    <p><strong>En guard:</strong></p>
-    Efeito: Enquanto em postura defensiva garante um contra-ataque, só pode ser ativado uma vez por turno.
     <br>
-    Custo: 2 pontos de melhoria.
     <br>
+    <p class="ss">Morte</p>
+    <p><strong>Necrosado:</strong></p>
+    <p>Efeito: O alvo recebe 500 dano em sua vida máxima por turno ao longo de 5 turnos. Cada stack aumenta o dano em 100, mas não aumenta a duração.</p>
     <br>
     <br>
-    <p><strong>En guard avançado:</strong></p>
-    Efeito: Enquanto em postura defensiva garante um contra-ataque, pode ser ativado 5 vezes por turno.
     <br>
-    Custo: 5 pontos de melhoria.
+    <p class="ss">Luz</p>
+    <p><strong>Cegado:</strong></p>
+    <p>Efeito: O alvo terá desvantagem por 2 turnos e +1 turno para cada stack.</p>
     <br>
     <br>
     <br>
-    <p><strong>Lâmina fria:</strong></p>
-    Efeito: Quando acerta um golpe crítico retira todos os stacks de dano prolongado e faz com que o alvo sofra todos os efeitos ao final do seu turno.
+    <p class="ss">Psiquico</p>
+    <p><strong>Confuso:</p></strong>
+    <p>Efeito: O mestre rolará 1d100, abaixo de 50 o ataque será redirecionado ao aliado, acima de 50 o ataque é realizado no inimigo. O efeito dura 1 turno e +1 turno para cada stack.(Quando não há aliados, ele irá acertar a si próprio).</p>
+    <p><strong>Enfeitiçado:</p></strong>
+    <p>Efeito: -2 em todos os atributos para cada stack, além disso sempre que acertar ou sofrer um golpe crítico deve realizar um teste (CD=100 +25 +influência de quem aplicou), em caso de falha receberá 1 stack de “confuso” por 1 turno. Acertar quem aplicou esse stack também o força a rolar esse teste. Caso ataque o alvo à uma distância maior que médio, apenas golpes críticos ativam esse efeito.</p>
+    <p><strong>Maldição romântica:</p></strong>
+    <p>Efeito: O alvo sofrerá 200 +300% da influência do alvo como dano psíquico toda vez que agir contra um inimigo, essa habilidade causará +200 de dano para stack que tiver, o número de stacks também conta para duração em turnos e possuí um limite de 5 stacks.</p>
+    <p><strong>Encantado: </strong></p>
+    <p>Efeito: Obedece o conjurador por 1 turno. O efeito só poderá ser retirado quando receber um dano maior que 10% de sua vida máxima, antes de realizar alguma ordem ele pode escolher seguir a ordem, ou receber dano igual 250% de 1 atributo à de quem o ordenou sua escolher para realizar a ação ordenada com desvantagem, ademais pode optar por sofrer +500% do atributo escolhido anteriormente para aplicar desvantagem superior ao invés disso. Além disso, pode escolher receber 500% do atributo mais alto do seu controlador para realizar um teste de Inteligência (CD:45xNº da classe + atributo mais alto de quem ordenou), em caso de sucesso o efeito é removido. O afetado não poderá se matar.</p>
     <br>
-    Custo: 5 pontos de melhoria.
     <br>
     <br>
+    <p class="ss">Sagrado</p>
+    <p><strong>Fúria divina:</strong></p>
+    <p>Efeito: Cada ataque sofrido tem um dano aumentado em 500 +50 por stack de dano sagrado, além disso acaba morrendo ao chegar aos 10% de vida máxima. Esse efeito dura 1 turno +1 para cada stack.</p>
     <br>
-    <p><strong>Corte refinado:</strong></p>
-    Efeito: Mesmo ao errar um ataque  por causa do dado de esquiva causa 10% do dano da arma.
     <br>
-    Custo: 1 pontos de melhoria.
     <br>
+    <p class="ss">Etério</p>
+<p><strong>Ligação d'alma:</p></strong>
+    <p>Efeito: Cancela qualquer atividade que o alvo está fazendo com sua alma, seja ataques espirituais, ou até
+      ressonância das almas. Esse efeito dura 1 turno, não pode ter a duração extendida.</p>
     <br>
     <br>
-    <p><strong>Corte refinado avançado:</strong></p>
-    Efeito: Mesmo ao errar um ataque por causa do dado de esquiva causa 25% do dano da arma.
     <br>
-    Custo: 2 pontos de melhoria.
+    <p class="ss">Sombrio</p>
+    <p><strong>Ofuscado:</strong></p>
+    <p>Efeito: Ataques realizados tem 25% chance de causar 0 de dano (O alvo deve rolar 1d100 e tirar à cima e 25 para causar dano). Esse efeito dura 1 turno e +1 turno por stack.</p>
     <br>
     <br>
     <br>
-    <p><strong>Corte refinado superior:</strong></p>
-    Efeito: Mesmo ao errar um ataque por causa do dado de esquiva causa 50% do dano da arma.
+    <p class="ss">Vitally</p>
+    <p><strong>Degenerar:</strong></p>
+    <p>Efeito: O alvo sofre 500% da própria constituição +500 para cada ponto de essência faltante como dano vitally por turno. Quando o alvo sofrer um golpe fatal enquanto possuir degenerar, o alvo perde 2 pontos de essência. Reduza 1 stack sempre que o alvo receber cura, esse efeito não pode ser removido de outras formas.</p>
     <br>
-    Custo: 4 pontos de melhoria.
     <br>
     <br>
+    <p class="ss">Astral</p>
+    <p><strong>Assombrado:</strong></p>
+    <p>Efeito: Todo o dano causado ao alvo, terá 10% de seu dano redirecionado a vida máxima, a vida máxima é recuperada após a batalha. Esse efeito dura 3 turnos +1 turno por stack.</p>
+    <p><strong>Amaldiçoado:</strong></p>
+    <p>Efeito: O alvo recebe 50 dano verdadeiro por stack, além de perder 2 nos atributos de corpo por stack, toda a cura recebida é reduzida pela metade. A duração é 10 turnos e não pode ser aumentada e possui um limite de 10 stacks. 
+    </p>
     <br>
-    <p><strong>Arma fortificada:</strong></p>
-    Efeito: Quando errar um ataque por causa de um dado de bloqueio, mesmo assim cause 10% do dano da arma.
     <br>
-    Custo: 1 pontos de melhoria.
     <br>
     <br>
+    </div>
+    <div id="mal">
+    <h2>Malignos:</h2>
+    <hr/>
     <br>
-    <p><strong>Arma fortificada avançada:</strong></p>
-    Efeito: Quando errar um ataque por causa de um dado de bloqueio, mesmo assim cause 25% do dano da arma.
     <br>
-    Custo: 2 pontos de melhoria.
     <br>
+    <p><strong>Intimidado:</strong></p>
+    Efeito: Não poderá ter como alvo o conjurador durante 1 turno, além disso, terá desvantagem por +4 turnos, em jogadas contra o conjurador.
     <br>
     <br>
-    <p><strong>Arma fortificada superior:</strong></p>
-    Efeito: Quando errar um ataque por causa de um dado de bloqueio, mesmo assim cause 50% do dano da arma.
     <br>
-    Custo: 4 pontos de melhoria.
+    <p><strong>Enraizado:</strong></p>
+    Efeito: O alvo Fica impossibilitado de se locomover, realizando ataques com desvantagem. Esse efeito dura 1 turno e +1 turno por stack.
     <br>
     <br>
     <br>
-    <p><strong>Fio refinado:</strong></p>
-    Efeito: O dano da arma passa a ser superior.
+    <p><strong>Ferida ebânea:</strong></p>
+    Efeito: O alvo que for afetado por ferida ebânea sofre 20% da maestria +150 como dano verdadeiro. Sempre que o alvo tiver mais de uma ferida ebânea os efeitos dos demais são aplicados ao mesmo tempo e de maneira separada, por exemplo: 2 stacks = 40% da maestria +300 como dano verdadeiro. Além disso ferida ebânea não pode ser curada e não pode ser removida, para cada stack de ferida ebânea reduza a cura recebida pelo alvo em 100.
     <br>
-    Custo: 5 pontos de melhoria.
     <br>
     <br>
+    <p><strong>Traumatizado:</strong></p>
+    Efeito: O afetado não poderá ter como alvo o conjurador durante 1 turno, além disso terá desvantagem em todas as jogadas contra o conjurador para sempre. Esse efeito é aplicado automaticamente se o alvo falhar no teste com uma diferença maior que 100+10 *Nº da classe. Além disso sofre com uma condição especial permanentemente.
     <br>
-    <p><strong>Arma rápida:</strong></p>
-    Efeito: Todo começo de batalha você pode atacar o alvo mais uma vez com a espada.
     <br>
-    Custo: 5 pontos de melhoria.
     <br>
+    <p><strong>Lentidão:</strong></p>
+    Efeito: Recebe penalidade de 10 + 5*Nº da classe nos dados de acerto e na esquiva. Esse efeito dura 1 turno e +1 turno por stack.
     <br>
     <br>
-    <p><strong>Corte de caça:</strong></p>
-    Efeito: A arma causa 25% de dano à uma raça a sua escolha.
     <br>
-    Custo: 1 pontos de melhoria.
+    <p><strong>Wither:</strong></p>
+    Efeito: Toda a alteração da vida recebido será ocultado, além disso, você levará X dano por turno, ademais qualquer condição aplicada será ocultada e terá seu dano aumentado em 100xNº de stacks de "Wither" que o alvo tiver. Esse efeito dura 5 turnos e +1 turno por stack.
     <br>
     <br>
+    
+    <br><p><strong>Sangramento:</strong></p>
+    Efeito: O alvo receberá 100 +10% da maestria como dano verdadeiro por turno ao longo de 4 turnos, se o efeito for aplicado novamente a duração irá aumentar em +2 turnos e o dano do sangramento aumenta em +250 até um limite de 2.000, além disso reduz toda a cura recebida pelo dobro do valor do dano de sangramento atual sendo esse no máximo 3.000.
     <br>
-    <p><strong>Corte de caça avançado:</strong></p>
-    Efeito: A arma causa 50% de dano à uma raça a sua escolha.
     <br>
-    Custo: 2 pontos de melhoria.
     <br>
+    <p><strong>Extinção:</strong></p>
+    Efeito: Se for morto nesse período não poderá ser ressuscitado de nenhuma forma. Extinção dura 3 turnos e não pode ser aumentado, podendo apenas ser aplicado novamente ao fim da duração.
     <br>
     <br>
-    <p><strong>Corte de caça superior:</strong></p>
-    Efeito: A arma causa 75% de dano à uma raça a sua escolha.
     <br>
-    Custo: 3 pontos de melhoria.
+    <p><strong>Stun:</strong></p>
+    Efeito: Fica impossibilitado de agir. Não pode ser stackado e seu efeito não pode ser extendido, durante stun qualquer teste de esquiva/bloqueio tem desvantagem superior.
     <br>
     <br>
     <br>
-    <p><strong>Corte de caça masterizado:</strong></p>
-    Efeito: A arma causa 100% de dano à uma raça a sua escolha.
+    <p><strong>Frágilidade:</strong></p>
+    Efeito: Quando sofrer dano crítico, adicionalmente sofra 5% da sua vida máxima como dano verdadeiro extra, além disso recebe desvantagem em testes contra outras condições. Esse efeito dura 1 turno e +1 turno por stack.
     <br>
-    Custo: 5 pontos de melhoria.
     <br>
     <br>
+    <p><strong>Fraqueza:</strong></p>
+    Efeito:O alvo tem o dano reduzido em 300 +200*Nº da classe de todas as suas habilidades. Esse efeito dura 1 turno e +1 turno por stack.
     <br>
-    <p><strong>Núcleoide:</strong></p>
-    Efeito: Abre espaço para 1 núcleo de mako.
     <br>
-    Custo: 2 pontos de melhoria.
     <br>
+    <p><strong>Corvo Fantasma:</strong></p>
+    Efeito: O alvo sofre 200% da sua maestria por turno, durante 10 turnos. Sempre que for aplicado novamente, aumenta a duração em 2 turno e causa 100% (+50% da maestria no segundo stack e posteriores) da maestria instântaneamente. Além disso quem tentar retirar o efeito sofre do mesmo.
     <br>
     <br>
-    <p><strong>Núcleoide avançado:</strong></p>
-    Efeito: Abre espaço para 2 núcleos de mako.
+    <br><p><strong>Tormenta fantástica:</strong></p>
+    Efeito: O alvo recebe devantagem em acerto, ademais, qualquer dano que o portador causar terá 25% ou 1/4
+    refletido. Esse efeito dura por 2 turnos. Esse efeito não pode ser stackado.
     <br>
-    Custo: 3 pontos de melhoria.
     <br>
     <br>
+    <p><strong>Ficar Roxo:</strong></p>
+    Efeito: Sempre que o alvo receber dano, ele receberá 100xNº da classe dele como dano verdadeiro extra, esse bônus aumenta em 25xNº da classe para cada outro stack de ficar roxo que tenha. Esse efeito não conta como dano prolongado e é removido uma vez por turno ou sempre que receber cura ou regeneração maior que 200xNº da classe em um turno.
     <br>
-    <p><strong>Núcleoide superior:</strong></p>
-    Efeito: Abre espaço para 3 núcleos de mako.
     <br>
-    Custo: 4 pontos de melhoria.
     <br>
+    <p><strong>Teimoso:</strong></p>
+    Efeito: Quando o efeito é aplicado, o primeiro efeito negativo que for removido de maneira forçada será aplicado novamente. Esse efeito dura 3 turnos, mas reduza em 1 turno para cada efeito que reaplicar (só pode ser ativado 1 vez por turno).
     <br>
     <br>
-    <p><strong>Núcleoide masterizado:</strong></p>
-    Efeito: Abre espaço para 4 núcleos de mako.
     <br>
-    Custo: 5 pontos de melhoria.
+    <p><strong>Silêncio:</strong></p>
+    Efeito: Quando o efeito é aplicado, o alvo não poderá usar nenhuma habilidade ativa. Esse efeito dura 1 turno e +1 turno para cada stack.
     <br>
     <br>
     <br>
-    <p><strong>Corte dos ventos:</strong></p>
-    Efeito: Sempre que acertar, desfere mais um ataque à distância no formato de meia lua como um "slash" que pode atacar mais um inimigo ou o mesmo inimigo causando 50% do dano da arma.
+    <p><strong>Inibição:</strong></p>
+    Efeito: Quando o efeito é aplicado, o alvo não poderá usar nenhuma habilidade passiva. Esse efeito dura 1 turno e +1 turno para cada stack.
     <br>
-    Custo: 2 pontos de melhoria.
     <br>
     <br>
+    <p><strong>Morte vindoura:</strong></p>
+    Efeito: Quando o alvo tem sua vida reduzida a 1 ou menos, a morte da a sua graça e mesmo que tenha algo que impeça sua morte essas coisas serão anuladas, exceto resoluções que não podem ser removidas. Esse efeito dura 1 turno e +1 turno para cada stack.
     <br>
-    <p><strong>Corte dos ventos avançado:</strong></p>
-    Efeito: Sempre que acertar, desfere mais um ataque à distância no formato de meia lua como um "slash" que pode atacar mais um inimigo ou o mesmo inimigo causando 100% do dano da arma.
     <br>
-    Custo: 4 pontos de melhoria.
     <br>
+    <p><strong>Gravura de sangue:</strong></p>
+    Efeito: Cause 500 +250% da constituição do alvo como dano verdadeiro, o dano sofrido por essa condição é convertido em vida para quem o aplicou. Não pode ser removido. Dura por 2 turnos, não pode ser aplicado novamente enquanto o alvo ainda estiver sofrendo de "gravura de sangue".
     <br>
     <br>
-    <p><strong>Corte dos ventos superior:</strong></p>
-    Efeito: Sempre que acertar, desfere mais um ataque à distância no formato de meia lua como um "slash" que pode atacar mais 2 inimigos ou o mesmo inimigo 2 vezes causando 125% do dano da arma para cada corte extra.
     <br>
-    Custo: 5 pontos de melhoria.
+    <p><strong>Restrição:</strong></p>
+    Efeito: Causa "lentidão" por 2 turnos. Enquanto tiver lentidão todo o turno há 50% de chance de sofrer com "enraizamento". Esse efeito não pode ser aplicado enquanto o alvo já estiver sofrendo do mesmo.
     <br>
     <br>
     <br>
-    <p><strong>Corte dos ventos masterizado:</strong></p>
-    Efeito: Sempre que acertar, desfere mais um ataque à distância no formato de meia lua como um "slash" que pode atacar mais 3 inimigos ou o mesmo inimigo 3 vezes causando 150% do dano da arma para cada corte extra.
+    <p><strong>Resolução desativada:</strong></p>
+    Efeito: Reduz os stacks de resolução pelo mesmo número de stacks de resolução desativada. Para cada resolução que desativar, cause 500 de dano verdadeiro. O número de stacks não altera a sua duração. 
     <br>
-    Custo: 7 pontos de melhoria.
     <br>
     <br>
+    <p><strong>Estigma:</strong></p>
+    Efeito: Uma ferida causada a alma. Causa 1.000 +500% da aura por turno de dano verdadeiro e reduz a vida máxima pelo mesmo valor (a vida máxima reduzida é recuperada ao fim da mesa). Não é considerado dano prolongado e não pode ser aplicado mais de 1 vez em um alvo por turno. 
     <br>
-    <p><strong>Crítico avançado:</strong></p>
-    Efeito: Quando causar um golpe crítico adicione o dano da arma ao ataque novamente.
     <br>
-    Custo: 3 pontos de melhoria.
     <br>
+    <p><strong>Incapacitar:</strong></p>
+    Efeito: Reduz o atributo de "destreza" do alvo em 25. Esse efeito dura por 3 turnos e toda vez que for aplicado novamente reduza a "destreza" em +5. O número de stacks não altera a sua duração. 
     <br>
     <br>
-    <p><strong>Crítico superior:</strong></p>
-    Efeito: Quando causar um golpe crítico adicione o dobro do dano da arma ao ataque novamente.
     <br>
-    Custo: 6 pontos de melhoria.
+    <p><strong>Selo mental:</strong></p>
+    Efeito: Reduz o atributo de "magia" do alvo em 25. Esse efeito dura por 3 turnos e toda vez que for aplicado novamente reduza a "magia" em +5. O número de stacks não altera a sua duração. 
     <br>
     <br>
     <br>
-    <p><strong>Arma resistente:</strong></p>
-    Efeito: Torna a arma inquebrável, exceto por magia espacial.
+    <p><strong>pressão:</strong></p>
+    Efeito: Quando acertar um alvo sobre o efeito de "Pressão", números terminados em 0 e 5 também contam para acerto de combo. O efeito de pressão desaperece no final de seu turno.
     <br>
-    Custo: 4 pontos de melhoria.
     <br>
     <br>
+    <p><strong>inflação:</strong></p>
+    Efeito: Aumenta o custo de todas as habilidades (magias ou não magias) em 250 de mana, caso a habilidade não tenha um custo, ela ganhará um custo igual 1.000 por rank da habilidade. Esse efeito dura 3 turnos, stacks à mais não aumentam a duração, mas seus efeitos aumentam.
     <br>
-    <p><strong>Arma resistente avançado:</strong></p>
-    Efeito: Torna a arma inquebrável.
     <br>
-    Custo: 5 pontos de melhoria.
     <br>
+    <p><strong>Irrecuperável:</strong></p>
+    Efeito: Reduz toda a cura recebida à 0. Quando receber cura de qualquer fonte cause 200% da magia (Do conjurador) como dano vitally para cada stack de irrecuperável. Pode ter no máximo de 5 stacks.
     <br>
     <br>
-    <p><strong>Eletromágica:</strong></p>
-    Efeito: A espada causa 10% de dano elemental extra, o dano é igual ao seu elemento de afinidade. (requer saber o elemento de afinidade).
     <br>
-    Custo: 1 pontos de melhoria.
+    <p><strong>Pânico:</strong></p>
+    Efeito: Não pode acertar golpes críticos e tem tanto a sua esquiva quanto o seu bloqueio reduzidos em 50. Não pode ser stackado. Esse efeito perdura por 2 turnos, a duração não pode ser extendida.
     <br>
     <br>
     <br>
-    <p><strong>Eletromágica avançado:</strong></p>
-    Efeito: A espada causa 25% de dano elemental extra, o dano é igual ao seu elemento de afinidade. (requer saber o elemento de afinidade).
+    <p><strong>Chama verdadeira:</strong></p>
+    Efeito: A resistência ígnea do alvo é reduzida em 50%, além disso sempre que o alvo sofrer dano de “Queimando”, “Chama”, “incendiar” e “ignição”, cause dano extra igual 50% da magia para queimando, 100% para chama, 200% para incendiar e 300% para ignição. Stacks extras apenas aumentam a duração, não possuí um máximo de stacks. Esse efeito é tratado como dano prolongado ígneo.
     <br>
-    Custo: 2 pontos de melhoria.
     <br>
     <br>
+    <p><strong>Destruição:</strong></p>
+    Efeito: Reduz a maestria de um item em 25 permanente, se houver 5 stacks de de "destruição" em uma arma, esse ítem é destruído. Caso o item não tenha maestria não aplique a redução, mas destrua a mesma se atingir 5 stacks. Se o item conceder bloqueio ou esquiva reduza-o como se fosse a maestria e destrua se atingir 5 stacks.    
     <br>
-    <p><strong>Eletromágica superior:</strong></p>
-    Efeito: A espada causa 50% de dano elemental extra, o dano é igual ao seu elemento de afinidade. (requer saber o elemento de afinidade).
     <br>
-    Custo: 3 pontos de melhoria.
     <br>
+    <p><strong>Penumbra:</strong></p>
+    Efeito: O alvo não pode receber stacks de "ocultado" enquanto tiver esse efeito, além disso, todo incio de turno aliados do alvo dentro de uma distância curta devem realizar um teste de constituição (CD: 30xNº da classe +magia, para decidir a CD, use os seus atributos e classe), caso eles falhem recebem 1 stack de "Cego". Esse efeito dura 2 turnos e não pode ser extendido.   
     <br>
     <br>
-    <p><strong>Motivada pelo medo:</strong></p>
-    Efeito: A espada causa 10% de dano extra para cada 10 a menos que 100 que tenha no atributo de SAN.
     <br>
-    Custo: 4 pontos de melhoria.
+    <p><strong>Marca:</strong></p>
+    Efeito: O alvo poderá ser alvejado mesmo quando "Oculto". A duração do efeito é de 3 turnos e cada vez que receber marca de novo, aumente em +2 turnos. 
     <br>
     <br>
     <br>
-    <p><strong>Motivada pelo medo avançado:</strong></p>
-    Efeito: A espada causa 20% de dano extra para cada 10 a menos que 100 que tenha no atributo de SAN.
+    <p><strong>Arrepio mortal:</strong></p>
+    Efeito: Causa 500 de dano de gelo +250 por Stack e reduz a destreza do alvo em 4 e a resistência à Hydro e gelo em 10% por stack. Um máximo de 10 stacks pode ser aplicado. Se o alvo tiver 10 stacks de “arrepio mortal”, remova metade dos stacks e aplique 1 stack de “Arrepio mortal”.
     <br>
-    Custo: 6 pontos de melhoria.
     <br>
     <br>
+    <p><strong>Gelo esquifado:</strong></p>
+    Efeito: O alvo ficará congelado por dentro e por fora, durante esse estado, receber qualquer dano de hydro, gelo e elétrico causará 500 de dano de gelo superior +250 para cada 100 de energia que tiver. Além disso o alvo não poderá agir, sendo impossível esquivar e bloquear, porém quando receber dano de “Vento, éter, veneno, luz e astral” bloqueie automaticamente, enquanto que danos ígneos e físicos causarão metade do dano. Gelo esquivado possuí 1.000 xNº da classe de vitalidade, o alvo só será solto depois que “Gelo esquifado” for destruído. Enquanto tiver “Gelo esquifado” o alvo não pode ter sua vida reduzida à menos de 2.000 por ataque, mas reduza o dano excedente no gelo.
     <br>
-    <p><strong>Arma malevolente:</strong></p>
-    Efeito: Sempre que acertar um alvo com "sangramento" aplica mais 1 stack de "sangramento" e rola 1d100+sorte, caso seu dado seja maior que 75 causa 1 stack extra de "ferida ebãnea".
     <br>
-    Custo: 5 pontos de melhoria.
     <br>
+    <p><strong>Bioeletroestática:</strong></p>
+    Efeito: Quando receber qualquer dano, todos os aliados dentro de uma área Grande sofrerão 25% desse dano como dano elétrico superior, além disso, para cada stack de “Disfunção bioelétrica” que tiver, reduz a resistência elétrica em 10%. Esse stack perdura por 3 turnos, caso seja removido de maneira forçada, causará o dano de 3 stacks de “Disfunção bioelétrica”. Ademais, sempre que realizar um ataque, deve rolar 1d100, se tirar menos que 40 o ataque é negado, mas gaste os recursos mesmo assim.
     <br>
     <br>
-    <p><strong>Arma fantasma:</strong></p>
-    Efeito: Sempre que acertar, o alvo deve fazer um teste de CAR contra o seu, se o alvo falhar recebe "corvo fantasma".
     <br>
-    Custo: 5 pontos de melhoria.
+    <p><strong>Disfunção bioelétrica:</strong></p>
+    Efeito: O alvo recebe dano igual à 500% do próprio atributo de energia +100% por stack de dano elétrico superior sempre que receber 1 stack e recebe 100% +50% do próprio atributo de energia por turno. Enquanto tiver com “disfunção bioelétrica”, sempre que o alvo receber vida ou mana, aplique 1 stack de “Disfunção bioelétrica”. Ao  ativar uma habilidade, o alvo pode escolher sofrer 50% do custo como dano elétrico superior e adquirir 1 desvantagem para habilidade, ou sofrer 100% do custo como dano elétrico superior. Stacks de “Disfunção bioelétrica” são removidos de 1 em 1 por turno.  Possui um máximo de 5 stacks.
     <br>
     <br>
     <br>
-    <p><strong>Banhada de caos:</strong></p>
-    Efeito: Sempre que acertar um alvo ambos devem escolher 1 efeito benéfico e um maléfico e então os 2 rolarão 1d100, quem tirar o maior dado recebe o efeito negativo escolhido pelo outro e quem tirar o menor dado recebe o efeito positivo escolhido pelo outro.
+    <p><strong>Explosão bioelétrica:</strong></p>
+    Efeito: Uma explosão de raios parte de seu interior atingindo uma grande área ao seu redor. O alvo sofre 1.000% do próprio atributo de energia e tem sua mana reduzida no mesmo valor +250 de mana para cada stack de “Disfunção bioelétrica” que tinha, a quantidade de mana perdida é causada como dano elétrico superior para todos os alvos dentro de uma área Grande. O alvo principal também recebe 1 stack de “Silêncio” por 1 turno.
     <br>
-    Custo: 8 pontos de melhoria.
     <br>
     <br>
+    <p><strong>Fragmento do tempo:</strong></p>
+    Efeito: Fragmento do tempo é removido depois de 1 turno e por mais que possam ser aplicados várias vezes, eles não se acumulam. Quando um satck de "fragmento do tempo" é removido, o alvo recebe metade da classe de algum efeito entre: decompondo, necrosado ou wither.
     <br>
-</p>
-
-<p class="mec"><strong>Habilidades terrestres:</strong></p>
-<br>
-<p>As habilidades terrestres são obtidas toda vez que você chega à um nível multíplo de 10, elas também podem ser trocados por benefícios  (ao fazer essa troca, quando resetar perderá o benefício maior mas ganhará a chance de pegar um habilidade novamente ao chegar no nível correspondente).
-    <br><br>
-    <p><strong>Combo (Nível:10):</strong></p>
-    Efeito: Sempre que tirar um número que termina com em 3 ou 9 ao atacar com um ataque básico você pode atacar novamante usando o ataque básico uma vez. (combo só pode ser ativado 3 vezes por turno)
     <br>
     <br>
+    <p><strong>Descarga:</strong></p>
+    Efeito: Enquanto tiver descarga, acertar um ataque causa um forte curto de mana dentro do corpo do alvo, causando dano etério superior igual à 250 para cada stack de descarga que tiver. Para cada 10 stacks de descarga que tiver, pode usar “Descarga rápida”. Cada stack de descarga gera mana igual à 100.
     <br>
-    <p><strong>Músculos pesados (Nível:10):</strong></p>
-    Efeito: Quando rolar algum dano usando um ataque básico cujo atributo príncipal seja força, adicione metade do atributo de força ao dano como dano extra.
     <br>
     <br>
+    <p><strong>Eletromaníaca:</strong></p>
+    Efeito: Para cada stack de “Eletromaníaca” que tiver aumenta os atributos de: Força, Destreza, Magia e Aura em +2. Sempre que ganhar 1 stack de “Eletromaníaca”, recupera 1.000 de vida. Sempre que alcançar 10 stacks de “Eletromaníaca” perde 2 de sanidade e 10 de inteligência permanentemente.
     <br>
-    <p><strong>Preciso (Nível:10):</strong></p>
-    Efeito: Sempre que rolar uma falha crítica em algum dado de acerto, pode rerolar este dado. Conta como falha crítica qualquer número menor que 5xNº da classe.
     <br>
     <br>
+    <p><strong>Força da morte:</strong></p>
+    Efeito: Não pode ser stackado e desperece quando termina o seu turno. Sempre que um inimigo receber esse stack, ele sofrerá dano igual à 250% do atributo de constituição como dano vitally e enquanto tiver esse stack, ele perderá -1xNº da classe na esquiva, bloqueio e acerto. Quando o stack desaparecer, ele perderá mana igual à 250% do atributo de constituição.
     <br>
     <br>
-    <p><strong>Magicularidade (Nível:10):</strong></p>
-    Efeito: Quando realizar testes que usam o conhecimento mágico, pode aplicar metade do bônus do poder mágico ao teste. Além disso, suas magias custam 50 de mana à menos.
     <br>
+    <p><strong>Amigo da morte:</strong></p>
+    Efeito: Não pode ser stackado e desperece quando termina o seu turno. Sempre que um inimigo receber esse stack, ele aumentará 2 stacks de todos os efeitos de dano prolongado que tiver. Enquanto ele tiver esse stack ele tem todas as resistências reduzidas em 10%. Quando o stack é removido, retire 1 stack de todos os efeitos de dano prolongado que tiver e recebe o dano de cada stack removido.
     <br>
     <br>
-    <p><strong>Liderança natural (Nível:10):</strong></p>
-    Efeito: Seus aliados ganham 200 de mana toda vez que cumprirem o que você fala.
     <br>
+    <p><strong>Dormindo:</strong></p>
+    Efeito: O alvo fica impossibilitado de agir, mas ao receber qualquer dano que não seja de dano prolongado o faz acordar. A quantidade de stacks indica a sua duração, devendo remover 1 stack todo final de turno.
     <br>
     <br>
-    <p><strong>Auxilio de mana (Nível:10):</strong></p>
-    Efeito: Todo ínicio de turno recupera 150 de mana.
     <br>
+    <p><strong>Decompondo:</strong></p>
+    Efeito: A próxima cura recebida é completamente convertida em dano verdadeiro. O número de stacks indica quantas vezes isso pode acontecer. Remova 1 stack após a resolução desse efeito.
     <br>
     <br>
-    <p><strong>Sortudo (Nível:10):</strong></p>
-    Efeito: Role 1d100 somando seu atributo de sorte, cause dano verdadeiro igual a 5x o valor a 1 alvo. Só pode ser acionado 1 vez por batalha.
     <br>
+    <p><strong>Exilado:</strong></p>
+    Efeito: Não pode agir, nem receber dano de nenhuma fonte, além disso não pode se curar.
     <br>
     <br>
-    <p><strong>Debilitar (Nível:10):</strong></p>
-    Efeito: Ao causar dano prolongado, aumente em 1 stack desse mesmo dano prolongado.
     <br>
+    <p><strong>Vinda ao inferno:</strong></p>
+    Efeito: Cada stack reduz sua essência em 2. Caso tenha 5 stacks de Vinda ao inferno, reduz todas as resistências vitais e a resistência à morte em 25% permanentemente. Caso possua 10 stacks de vinda ao inferno, recebe desvantagem contra o dono dessa habilidade. Caso possua 15 stacks, recebe desvantagem superior. Caso possua 20 stacks, recebe desvantagem absoluta. Caso atinja 25 stacks, mesmo que sua alma não esteja desprotegida, contará como uma para o dono dessa habilidade. O dono da habilidade pode remover quantos stacks quiser fora de batalha, além disso, caso o faça o alvo recuperará todos os pontos de essência. Não pode stackar mais que 25 e não pode ser removido, exceto pelo possuidor da habilidade “Yume, a madrasta da essência”, e só pode ser removido 2 stacks por mesa.
     <br>
     <br>
-    <p><strong>Fagulha de vida (Nível:10):</strong></p>
-    Efeito: Ao morrer, deve fazer 1 teste de sorte CD=85, em caso de sucesso, revive com 1 de vida. Esse teste só pode ser feito 1 vez por batalha.
     <br>
+    <p><strong>Extração da alma:</strong></p>
+    Efeito: Qualquer dano que receber na sua alma será convertido em dano de morte, além disso sempre que sofrer qualquer ataque do dono dessa habilidade sofrerá 2% da vida máxima como dano verdadeiro. Esse stack só é removido no fim da batalha.
     <br>
     <br>
-    <p><strong>Empenhado (Nível:10):</strong></p>
-    Efeito: Sempre que um combate for finalizado por conta da morte de um inimigo, recebe 50xNº da classe de experiência.
     <br>
+    <p><strong>Maldição ígnea:</strong></p>
+    Efeito: A resistência ígnea do alvo é reduzida em 10% à cada turno até zerar. Quando a resistência zerar, o alvo receberá 250 de dano ígneo para cada 10% de resistência perdida. Caso a resistência do alvo originalmente seja 0% ou menos, nesse caso, aumente a resistência ígnea do alvo até que chegue a 0% ou apenas causando 250 de dano para cada 10% aumentado ou cause 200 de dano ígneo caso não haja alteração. Esse status dura 1 turno e +1 turno para cada Stack, caso a duração acabe antes de zerar a resistência, nesse caso o alvo recebe 250 de vida para cada 10% de resistência ígnea que tiver de diferença até 0.
     <br>
     <br>
-    <p><strong>Apto (Nível:10):</strong></p>
-    Efeito: Recebe +5 em um atributo à escolha, respeitando limite de classe.
     <br>
+    <p><strong>Dor:</strong></p>
+    Efeito: Todo o dano recebido é aumentado em 250 +200 por stack. Dura por 8 turnos.
     <br>
     <br>
-    <p><strong>Perito (Nível:10):</strong></p>
-    Efeito: Adicione +1 em uma maestria à escolha para cada 10 no atributo base da maestria escolhida.
     <br>
+    <p><strong>Bomba:</strong></p>
+    Efeito: Causa 100% da magia como dano ígneo. Dura até o fim da batalha ou até ser ativado.
     <br>
     <br>
-    <p><strong>Faíscar (Nível:10):</strong></p>
-    Efeito: Receba +1 no acerto para cada 50 de velocidade que tenha.
     <br>
+    <p><strong>Medo:</strong></p>
+    Efeito: Reduz todos os atributos do alvo em 2xN° da classe deles em todos os atributos. Além disso, o alvo não pode ter o conjurador como alvo de ataques. Uma vez por turno, deve realizar um teste de influência (CD: 20xN° da classe + influência de quem colocou em medo), em caso sucesso nada acontece, em caso de falha ficará com 1 Stack de confuso. Medo dura 3 turnos e não pode ser stackavel.
     <br>
     <br>
-    <p><strong>Esbelto (Nível:10):</strong></p>
-    Efeito: Quando tentar persuadir ou iludir alguém durante Rp, receba +10 em influência.
     <br>
+    <p><strong>Cadeia de relâmpagos:</strong></p>
+    Efeito: Sempre que o alvo sofrer um ataque, reduza um stack. O alvo sofre 25% do dano recebido como dano verdadeiro extra, além disso metade do dano sofrido é repassado para todos os outros inimigos com cadeia de relâmpago no campo de batalha, independente da distância.
     <br>
     <br>
-    <p><strong>Começo rápido (Nível:20):</strong></p>
-    Efeito: No primeiro turno, ganha Vantagem superior durante a iniciativa e seu alcance sobe em 1 passo.
     <br>
+    <p><strong>Chamas do desespero:</strong></p>
+    Efeito: chamas do desespero duram por 3 turnos e não pode ser estendido. Todo o Stack de dano ígneo aplicado ao alvo que possua "chama do desespero" terá seu limite aumentado em 3 stacks.
     <br>
     <br>
-    <p><strong>Modo tanque (Nível:20)</strong></p>
-    Efeito: Reduz a esquiva pela metade, ganhe o mesmo valor em bloqueio (esse bônus é aplicado indepente de outros bônus que aumentam sua esquiva, considerando apenas a esquiva base).
     <br>
+    <p><strong>Selo:</strong></p>
+    Efeito: Receber esse stack significa que está sendo selado, ele não pode ser removido à menos que o quem o aplicou morra ou fique incapacitado. Sempre que receber 1 stack de “Selo”, ganhe 1 stack de “Silêncio”. Quando atingir 7 stacks de selo, você será selado, tendo as condições para a liberdade variável dependendo de quem o fez.
     <br>
     <br>
-    <p><strong>Intocavel (Nível:20):</strong></p>
-    Efeito: Reduz o bloqueio pela metade, ganhe o mesmo valor em esquiva (esse bônus é aplicado indepente de outros bônus que aumentam sua esquiva, considerando apenas o bloqueio base).
     <br>
+    <p><strong>Língua flamejante:</strong></p>
+    Efeito: Sempre que o alvo realizar uma ação (Ação padrão, ação bônus, ação de reação, ação de movimento, ação completa) o alvo sofrerá 200% da magia como dano ígneo. Cada stack aumenta o dano em 100% podendo causar um máximo de 600% da magia como dano ígneo embora não possua stacks máximos. Cada turno que se passar reduza 1 stack, retirando o efeito caso o alvo não possua nenhum stack.
     <br>
     <br>
-    <p><strong>Anti-armadilha (Nível:20):</strong></p>
-    Efeito: Quando entrar em algum lugar, pode realizar a ação "procurar mágia", ao usar essa ação recebe metade do bônus de Magia no teste para detectar qualquer uso de mana presente no lugar, quando bem sucedido, você passa a poder reconhecer o dono daquela mana.
     <br>
+    <p><strong>Ventos da vingança:</strong></p>
+    Efeito: Cada Stack causará 2% da vida máxima do alvo, ao atingir 5 stacks, todos são removidos de uma única vez e o dano sofrido tem metade do valor passado para aliados dentro de uma área curta. Sempre que um Stack for removido causará dano proporcional à quantidade de stacks removidos.
     <br>
     <br>
-    <p><strong>Artilharia (Nível:20):</strong></p>
-    Efeito: Sempre que uma criatura sua morrer, pode invocar uma nova criatura usando uma ação bônus, desde que ela seja outro tipo de criatura e seja de uma classe menor que a criatura morta, só pode ser ativado uma vez por turno.
     <br>
+    <p><strong>Previsão dos ventos:</strong></p>
+    Efeito: Quando sofrer dano na sanidade, cause 1 de dano extra à sanidade. Quando realizar um ataque o mestre deve rolar 1d2, o valor máximo do dado aumenta em 1 para cada Stack que tiver, se o alvo tirar 1, então o ataque acerta o alvo escolhido, se cair qualquer outro número o ataque é realizado em outro alvo aleatório, devendo numerar os alvos podendo escolher um para não entrar na numeração, os alvejados desse ataque aleatório devem rolar sua defesa com desvantagem.
     <br>
     <br>
-    <p><strong>Ganhos comunistas (Nível:20):</strong></p>
-    Efeito: Sempre que receber mana, concede metade do valor como mana para todos os aliados, limitado à 100xNº da classe.
     <br>
-    Requisito: Auxílio de mana
+</div>
+<div id="ben">
+    <h2>Benignos:</h2>
+    <hr/>
     <br>
+    <p><strong>Cinza vívido:</strong></p>
+    Efeito: Cure 500 +150% da magia por turno, para cada stack à menos do que 5 aumente a cura base em 250. no último turno remova 1 efeito negativo imposto em você.
     <br>
     <br>
-    <p><strong>Supressão de mana (Nível:20):</strong></p>
-    Efeito: Pode pressionar a sua aura sobre o oponente causando 500% +100xNº da classe do atribuo de magia como dano verdadeiro e silênciando o alvo por 1 turno, podendo ser acionado 1 vez por turno. O ataque é negado se o oponente tiver mais mana, além disso só pode ser usado 3 vezes por batalha.
     <br>
+    <p><strong>Inspirado:</strong></p>
+    Efeito: O alvo recebe vantagem em todos os dados durante 5 turnos.
     <br>
     <br>
-    <p><strong>Extra vazar (Nível:20):</strong></p>
-    Efeito: Quando infligir stacks de dano prolongado, aplique metade desses stacks em 1 outra criatura na batalha (mínimo de 1 outra criatura).
     <br>
+    <p><strong>Fulgor:</strong></p>
+    Efeito: Ganhe 4 stacks de poder enfocado ou poder superfocado ao terminar um turno. Ao sofrer um ataque retire um Stack de poder enfocado ou superfocado, e sofra 200 de dano verdadeiro (Multihit é contabilizado no máximo de até 5 hits). Não pode ser stackado, e tem duração de 1 turno, para cada vez que adicionar fulgor aumente a duração em 1 turno. Para cada 2 poder enfocado ou superfocado, ganhe +10 de maestria. 
     <br>
     <br>
-    <p><strong>Sangue na veia (Nível:20):</strong></p>
-    Efeito: Quando ficar com 200xNº da classe ou menos de vida, ganha uma regeneração de 100xNº da classe por turno, durante 5 turnos. Esse efeito não pode ser removido.  
     <br>
+    <p><strong>Tempestade arcana:</strong></p>
+    Efeito: Adicione 50% de dano à mais nas magia para cada stack de tempestade arcana. Perdura por 1 turno, mas aumente em 1 turno para cada 2 stacks de tempestade arcana que tiver, outrora quando os turnos passarem, apenas reduza 1 stack ao invés de remover todos.
     <br>
     <br>
-    <p><strong>Estudante (Nível:20):</strong></p>
-    Efeito: Testes de treino tem suas CD reduzidas em 10+2xNº da classe.
     <br>
+    <p><strong>Emergência:</strong></p>
+    Efeito: Ao contrário de outros efeitos, esse efeito não passará até que seus stacks sejam reduzidos de maneira forçada, seja pelo próprio efeito, ou por outros. Pode gastar 1 stack de emergência para aplicar 1 dos bônus abaixo:
     <br>
     <br>
-    <p><strong>Aventureiro rúnico (Nível:20):</strong></p>
-    Efeito: Quando ganhar runas, pode escolher o arquétipo da runa de menor raridade.
+    Rejuvenecer: Cura 500 + 50x Nº da classe de vida por turno, durante 1 turno. Cada stack não aumenta seu efeito e sim aumenta a duração por 1 turno.
     <br>
     <br>
+    Cristalizar: Fornece um escudo igual a 500 +50x Nº da classe, durante 1 turno. Cada stack não aumenta seu efeito e sim aumenta a duração por 1 turno.
     <br>
-    <p><strong>Arma mágiculosa (Nível:20):</strong></p>
-    Efeito: Quando acertar um ataque básico, cause 20xNº da classe de dano etério extra, caso use a maestria de canalizador, o dano aumenta para 40xNº da classe.
     <br>
+    Bloquear: Ao gastar 3 stacks de emergência, bloqueia 1 dano fatal, anulando o dano.
     <br>
     <br>
-    <p><strong>Passos ageis (Nível:20):</strong></p>
-    Efeito: Recebe +10xNº da classe de velocidade.
+    Reanimar: Gastando todos os stacks de "emergência" traga alguém de volta a vida e concede resolução e imúnidade a esse alvo por 1 turno.
     <br>
     <br>
     <br>
-    <p><strong>Presença centralizada (Nível:20):</strong></p>
-    Efeito: Quando em combate, todos os testes de esquiva ou bloqueio de aliados (Apenas), somam +1 para cada 15 de influência que tenha, além disso troque o seu atributo base de esquiva ou bloqueio para influência.
+    <p><strong>Resolução:</strong></p>
+    Efeito: Não pode ter a vida reduzida abaixo de 1 enquanto o efeito durar. Remove 1 stack ao final do turno.
     <br>
     <br>
     <br>
-    <p><strong>Impercepção (Nível:30):</strong></p>
-    Efeito: Ao se esconder e usar uma das técnicas de furtividade, pode anular completamente uma das formas de percepção além da que você está usando.
+    <p><strong>Pureza encantada:</strong></p>
+    Efeito: Transforma condições malignas em benignas, transformando os danos dos efeitos em cura. Para cada stack de "Pureza encantada" que tiver troque os efeitos da condição, mas remova um stack de "Pureza encantada".
     <br>
     <br>
     <br>
-    <p><strong>Resiliente (Nível:30):</strong></p>
-    Efeito: Prepara o seu corpo para viver e regenerar-se sem o uso de mágias, ao chegar a 1 de vida pode continuar lutando e recupera 1.500 da classe de vida ao longo de 3 turnos, recebendo 500 de vida por turno.
+    <p><strong>Cura maldita:</strong></p>
+    Efeito: O alvo recebe cura equivalente a 1% de sua vida, se o efeito for retirado, causa dano a todos os inimigos e a quem retirou igual a toda cura recebida, ademais aliados ao redor tem vida recuperada do mesmo valor.
     <br>
     <br>
     <br>
-    <p><strong>Assassinato (Nível:30):</strong></p>
-    Efeito: Sempre que começar um combate enquanto furtivo ou "oculto", pode realizar a ação "assassinato", realizando um golpe de maestria, o dano causado é dobrado, além disso o ataque também tem a possibilidade de critar.
+    <p><strong>Véu fantasmagórico:</strong></p>
+    Efeito: Esquiva de um ataque na certa, ao sofrer um ataque reduza 1 stack.
     <br>
     <br>
     <br>
-    <p><strong>Confundir espaço (Nível:30):</strong></p>
-    Efeito: Ao emanar sua mana envolta de sí você se camufla entre outras auras. Sempre que estiver em um lugar com mais auras, pode usar a ação "confundir senso", quem estiver lhe procurando deve passar em um teste de INT (CD= sua magia + Nível +10xNº da classe), caso seja bem sucedido, recebe a condição "Oculto". Essa ação requer uma ação bônus;
+    <p><strong>Fortificado:</strong></p>
+    Efeito: Recebe 2.000 de escudo e +500 para cada vez que for reaplicado.
     <br>
     <br>
     <br>
-    <p><strong>Mostrar exemplo (Nível:30):</strong></p>
-    Efeito: Ao realizar uma ação, outros aliados que farão a mesma ação ganham um bônus de +10 pra cada classe que você esteja para dados de acerto, esquiva ou bloqueio. Além disso para usos de magias, os aliados devem usar a mesma magia que você.
+    <p><strong>Absorção:</strong></p>
+    Efeito: Recupera metade do dano sofrido como vida, menos de outras condições. Para cada golpe recebido reduza 1 stack.
     <br>
     <br>
     <br>
-    <p><strong>Conversão rápida (Nível:30):</strong></p>
-    Efeito: Sempre que receber mana, cure a sí próprio pela metade do valor, limitado à 100xNº da classe.
+    <p><strong>Ocultado:</strong></p>
+    Efeito: Não pode ser alvo de ataques, mas ainda pode sofrer dano. Automaticamente fica furtivo, além disso, recebe vantagem em ataques. Quando atacar retire todos os stacks de "Ocultado".
     <br>
-    Requisíto: Auxílio de mana.
     <br>
     <br>
+    <p><strong>Eloquente:</strong></p>
+    Efeito: Oferece 50 de bônus em influência por 2 turnos.
     <br>
-    <p><strong>Rico? (Nível:30):</strong></p>
-    Efeito: Uma vez por mesa, quando receber dinheiro role 1d100, multiplique o valor recebido por 1 + 0,01 para cada valor no dado. 
     <br>
     <br>
+    <p><strong>Preparação de ataque:</strong></p>
+    Efeito: Garante que o próximo ataque seja crítico, retire o efeito ao sofrer dano ou quando atacar (mesmo que erre).
     <br>
-    <p><strong>Fulgor contínuo (Nível:30):</strong></p>
-    Efeito: Quando o alvo tiver "imunidade", ao invés de não aplicar nenhum efeito de dano prolongado, cause metade do dano dos stack que aplicaria instântaneamente, podendo causar o dano de 1xNº da classe de stacks por turno através dessa habilidade.
     <br>
     <br>
+    <p><strong>Graça dos deuses:</strong></p>
+    Efeito: Recebe 20 de bônus em CON e magia, além disso todo o dano causado se torna sagrado.
     <br>
-    <p><strong>Persistir (Nível:30):</strong></p>
-    Efeito: Quando morrer poderá tentar +1 vez o teste para reviver através da "fagulha de vida". Ganha +200 *Nº da classe como vida máxima. Caso não possa usar "fagulha de vida", apenas ganhe o aumento na vida máxima.
     <br>
+    <br><p><strong>Veloz:</strong></p>
+    Efeito: Recebe 10 +5*Nº da classe de aumento nos dados de acerto, e na esquiva.
     <br>
     <br>
-    <p><strong>Foco de estudo (Nível:30):</strong></p>
-    Efeito: Ao escolher essa habilidade escolha entre habilidades ou maestrias. Ganha vantagem em testes de treinos para a área escolhida.
     <br>
+    <p><strong>Imprevisivel:</strong></p>
+    Efeito: Ganha vantagem em dados de acerto.
     <br>
     <br>
-    <p><strong>Muitos benefícios maiores (Nível:30):</strong></p>
-    Efeito: Ao pegar essa habilidade, receba de forma instantânea 3 benefícios maiores do "nivelamento".
     <br>
+    <p><strong>Intuitivo:</strong></p>
+    Efeito: Recebe vantagem em bloqueio e esquiva.
     <br>
     <br>
-    <p><strong>Arma carregadora (Nível:30):</strong></p>
-    Efeito: Quando acertar um ataque básico, recupera 25 de mana para cada 50 de maestria que tenha.
     <br>
+    <p><strong>Protetor:</strong></p>
+    Efeito: Quem recebe esse bônus tem todos os ataques inimigos direcionados a ele.
     <br>
     <br>
-    <p><strong>Velocidade da esquiva (Nível:30):</strong></p>
-    Efeito: Quando esquivar um ataque, aumente a sua velocidade no próximo turno em 50.
     <br>
-    Requisitos: "Intocavel" ou "Faíscar".
+    <p><strong>Poder enfocado:</strong></p>
+    Efeito: Adiciona +500% de dano em habilidades de alvo unico. Para cada stack aumente o dano final causado em 500 por stack, e remova todos os stacks ao realizar um ataque.
     <br>
     <br>
     <br>
-    <p><strong>Amiso avigo (Nível:30):</strong></p>
-    Efeito: Uma vez por turno, quando um aliado realizar um teste de acerto, esquiva ou bloqueio, aumente o resultado dele em 20 ao gastar uma ação de reação.
+    <p><strong>Poder superfocado:</strong></p>
+    Efeito: Adiciona +250% de dano em habilidades com 2 ou mais alvos. Para cada stack aumente o dano final causado em 250 por stack, e remova todos os stacks ao realizar um ataque.
     <br>
     <br>
     <br>
-    <p><strong>Luta engajada (Nível:40):</strong></p>
-    Efeito: Caso o oponente erre um ataque pode realizar um ataque básico, isso pode ocorrer 1 vez para cada 100 de força que tenha.
+    <p><strong>Abençoado:</strong></p>
+    Efeito: Retira efeitos málignos e torna o alvo imune por 1 turno.
     <br>
     <br>
     <br>
-    <p><strong>Físico sobre-humano (Nível:40):</strong></p>
-    Efeito: Quando bloquear um ataque, não sofre com condições de dano prolongado, ou atordoamento. Exceto "corvo fantasma".
+    <p><strong>Alerta:</strong></p>
+    Efeito: Recebe vantagem em sentidos e em esquiva.
     <br>
     <br>
     <br>
-    <p><strong>Tiro enfeitado (Nível:40):</strong></p>
-    Efeito: 1 vez por turno, ao realizar um ataque básico à distância, pode escolher qualquer 1 desses efeitos para ativar:
+    <p><strong>Regenerando:</strong></p>
+    Efeito: Cura 250% da constituição do alvo por turno. O número de stacks representa a duração do efeito em turnos, reduzindo 1 stack à cada turno que se passa. Além disso cada stack aumenta a cura recebida em 100 +50% da constituição do alvo.
     <br>
     <br>
-    Curva: O tiro torna-se impossível de bloquear, mas ainda pode ser esquivado.
     <br>
+    <p><strong>Adrenalina:</strong></p>
+    Efeito: Ganha regeneração de +200 de vida por turno, além disso ganha +20 em Esquiva e Acerto. Reduza 1 stack de adrenalina por turno.
     <br>
-    Alvo errado: Após errar o alvo original, pode realizar um segundo ataque contra outro alvo.
     <br>
     <br>
-    Letalizar: Quando acertar o alvo ou realizar uma falha crítica, aplique 1 stack de "sangramento" quando acertar e 1 de "Ferida ebânea" quando realizar uma falha crítica.
+    <p><strong>Vingança justa:</strong></p>
+    Efeito: Pode acumular no máximo de 10 stacks. Enquanto tiver "Vingança justa", sempre que realizar um ataque de luz, cause 50% da vida faltante como dano de luz extra. Não pode ser removido.
     <br>
     <br>
-    <p><strong>Esplendor (Nível:40):</strong></p>
-    Efeito: Ao acertar uma magia ou um ataque básico com a maestria de canalizador, pode curar um aliado pela metade do dano causado.
     <br>
-    Requisito: Magícularidade.
+    <p><strong>Reflexão de efeito anormal:</strong></p>
+    Efeito: Remove qualquer efeito negativo aplicado a voçê a partir do ganho desse efeito, e aplique-o de volta no aplicador. Reflete um número de efeitos igual ao número de stacks de efeito anormal.
     <br>
     <br>
     <br>
-    <p><strong>Descartar (Nível:40):</strong></p>
-    Efeito: Uma vez por turno, pode remover alguma criatura sua, em troca receba 500xNº da classe da criatura como mana.
+    <p><strong>Frente fria:</strong></p>
+    Efeito: Sempre que ganhar 1 stack de “Frente fria” recebe escudo igual à 500. Para cada stack de “Frente fria” ganhe +2 nos atributos de magia, força, destreza, constituição e aura, além disso enquanto tiver “Frente fria” aumente o bloqueio em 25. Reduza 1 stack de “frente fria” sempre que seu escudo for quebrado.
     <br>
     <br>
-    <p><strong>Conversão em conjunto (Nível:40):</strong></p>
-    Efeito: Sempre que um aliado receber mana, cure-o na metade do valor, limitado à 100xNº da classe.
     <br>
-    Requisíto: Conversão rápida.
+    <p><strong>Força da vida:</strong></p>
+    Efeito: Não pode ser stackado e desperece quando termina o seu turno. Sempre que um aliado ganhar esse stack, ele ganhará um escudo igual à 250% do seu atributo de constituição. Enquanto estiver com esse stack aumenta o acerto, esquiva e bloqueio em +2xNº da classe do dono dessa habilidade. Quando o stack desaparecer, o escudo irá desaperecer também causando 100% do valor do escudo restante como dano vitally à todos os inimigos dentro de um alcance médio daquele aliado.
     <br>
     <br>
     <br>
-    <p><strong>Imortalidade (Nível:40):</strong></p>
-    Efeito: Uma vez por mesa, quando receber um golpe fatal enquanto tiver "Extinção", você ainda ficará com 0 de vida por 1 turno, anulando completamente o efeito caso seja curado dentro do periodo. Caso não esteja com "Extinção", receber qualquer cura faz com que sua morte seja negada.
+    <p><strong>Revivendo:</strong></p>
+    Efeito: Enquanto o alvo tiver esse stack ele recuperará 1.000 de vida por turno enquanto é agraciado com “Resolução” enquanto tiver esse efeito, mas não poderá agir, esquivar ou bloquear durante o mesmo. Quando atingir 2.000 de vida, voltará de volta a vida e poderá agir normalmente. Esse efeito dura 2 turnos.
     <br>
     <br>
     <br>
-    <p><strong>Críticar ferida (Nível:40):</strong></p>
-    Efeito: Sempre que causar dano crítico e infligir algum stack de dano prolongado, aumente os stacks aplicados em 1 para cada 0,20 do multiplicador crítico que tenha.
+    <p><strong>Chamado dos mortos vivos:</strong></p>
+    Efeito: Você não poderá esquiva, nem bloquear e nem atacar, ficando impossibilitado de agir, além disso recupera 25% da vida máxima imediatamente e receberá 50% de resistência à todas as suas resistências positivas, após 1 turno com esse stack você voltará à vida com 50% da vida máxima. Se morrer enquanto tiver esse stack, sua alma é danificada e você perderá 25 de essência e não reviverá mais, mas sua alma será guiada para o além.
     <br>
-    Requisitos: Debilitar.
     <br>
     <br>
+    <p><strong>Amigo da vida:</strong></p>
+    Efeito: Não pode ser stackado e desperece quando termina o seu turno. Sempre que um aliado ganhar esse stack, ele recuperará 500 de vida. Enquanto tiver com esse efeito diminui o custo de todas as habilidades em 500 de mana, 200 de vida, 750 de Reiryoku, 1.000 de Eletromana, 500 de folego. Quando o efeito desaparece, retire todos os stacks de 1 efeito negativo.
     <br>
-    <p><strong>Até o antepenúltimo (Nível:40):</strong></p>
-    Efeito: A CD da "fagulha de vida" reduz de 85 para 70. Ganha +10% em uma resistência a escolha, caso a resistência seja negativa, aumente em 25% ao invés de 10%, escolha novamante outra resist~encia quando chegar á classe 4 e uma terceira vez ao chegar à classe 6. A resistência não pode exceder 80%.
     <br>
-    Requisitos: Fagulha de vida.
     <br>
+    <p><strong>Chave do mundo dos mortos:</strong></p>
+    Efeito: Enquanto possuir esse stack, aumenta todas as resistências vitais em até 150%, além disso reduz a resistência à morte de todos os inimigos em 50%. Ademais, todo o dano causado é aumentado em 250xNº da classe. Enquanto tiver esse stack, o limite de seus atributos são iguais à de um classe 9.
     <br>
     <br>
-    <p><strong>Grande potencial (Nível:40):</strong></p>
-    Efeito: Quando um combate for finalizado por conta da morte de um inimigo, receba 100xNº da classe ao invés de 50xNº da classe de experiência.
     <br>
-    Requisitos: Empenhado.
+    <p><strong>Calor aconchegante:</strong></p>
+    Efeito: Cura 500 + 250 para cada 1.000 de vida máxima que tiver, apenas para aliados no alcance médio.
     <br>
     <br>
     <br>
-    <p><strong>Mais limite, mais força (Nível:40):</strong></p>
-    Efeito: Aumenta o limite de todos os atributos em 5. Receba +10 no limite de inteligência ao invés de +5 caso atinge o limite do atributo de inteligência.
+    <p><strong>Rage:</strong></p>
+    Efeito: quando tiver algum Stack de "Rage", receberá +3xN° da classe na esquiva e bloqueio, 10 +5xN° da classe no acerto, aumente a velocidade em +50, a distância em 1 categoria. Além disso, sempre que causar dano superior, cause 100 de dano desse mesmo elemento como dano extra, e sempre que causar dano verdadeiro cause 250 de dano verdadeiro extra. O número de Stacks não aumenta os efeitos e sim a duração, uma vez que quando os Stacks acabarem, perderá todos os bônus.
     <br>
     <br>
     <br>
-    <p><strong>Maestria universal (Nível:40):</strong></p>
-    Efeito: Pode trocar o atributo chave de uma maestria para qualquer outro que queira.
-    <br>
-    <br>
-    <br>
-    <p><strong>Reflexos rápidos (Nível:40):</strong></p>
-    Efeito: Aumenta a sua esquiva ou bloqueio base em +1xNº da classe. Caso possua a habilidade "Velocidade esquiva", aumente a esquiva ou bloqueio em +1 para cada 50 de velocidade que tenha.
-    <br>
-    <br>
-    <br>
-    <br>
-    <p><strong>Aura influênciadora (Nível:40):</strong></p>
-    Efeito: Para cada 10 de aura, aumente seu atributo de influência em 2, além disso aumenta o limite do atributo de influência em +5.
-    <br>
-    <br>
-    <br>
-    <p><strong>Reação de guarda (Nível:50):</strong></p>
-    Efeito: Uma vez por turno quando algum aliado for sofrer um ataque, pode usar sua ação de reação para um tomar o ataque no lugar, usando o bloqueio para se meter na frente, ou a esquiva para retira-lo do lugar. Em caso de falha ambos sofrem o ataque, porém o alvo protegido sofre metade do dano.
-    <br>
-    <br>
-    <br>
-    <p><strong>Guarda alta (Nível:50):</strong></p>
-    Efeito: Começa a batalha com um escudo igual a 20% da vida máxima.
-    <br>
-    <br>
-    <br>
-    <p><strong>Investida rápida (Nível:50):</strong></p>
-    Efeito: Uma vez por turno, quando uma criatura realizar um teste de fuga, pode usar a investida rápida como ação de reação para rolar um acerto com o seu alcance aumentado em 1 passo. O dano causado é igual a sua maestria + 100xNº da classe como dano verdadeiro extra.
-    <br>
-    <br>
-    <br>
-    <p><strong>Utamo vita (Nível:50):</strong></p>
-    Efeito: No começo da batalha, ganha um escudo igual a 20% da mana máxima.
-    <br>
-    <br>
-    <br>
-    <p><strong>Força unida (Nível:50):</strong></p>
-    Efeito: Até 3 vezes por batalha, pode gastar uma ação bônus para ganhar um escudo igual a 2% da vida máxima e +2% para cada aliado em batalha. 
-    <br>
-    <br>
-    <br>
-    <p><strong>Alternatividade (Nível:50):</strong></p>
-    Efeito: Uma vez por turno, ao receber cura de fontes que não seja sua própria regeneração, cause dano verdadeiro ao oponente igual a 1/4 desse valor.
-    <br>
-    Requísito: Conversão rápida.
-    <br>
-    <br>
-    <br>
-    <p><strong>Medo inexplicavel (Nível:50):</strong></p>
-    Efeito: No começo da batalha pode rolar um dado de "influência" (CD: 100 + 50xNº da classe), caso passe, causa "medo" ao alvo, além disso ele perde o primeiro turno. 
-    <br>
-    <br>
-    <br>
-    <p><strong>Perdurar o infortunio (Nível:50):</strong></p>
-    Efeito: Quando algum efeito de dano prolongado for removido forçadamente, aplique novamente esse efeito, isso só pode ser acionado 1 vez em cada alvo por turno. Outrora, caso todos os efeitos de dano prolongado forem removidos de uma só vez (exceto por habilidades suas), aplique metade da quantidade original a outro alvo, caso não haja outro alvo, aplique apenas 1 stack desse mesmo efeito no mesmo alvo.
-    <br>
-    <br>
-    <br>
-    <p><strong>Passar bem... (Nível:50):</strong></p>
-    Efeito: Quando reviver usando a "Fagulha de vida", ganhe cura igual a 500x Nº de sua classe, caso exceda a vida máxima, desconsidere o valor excedente. Ao escolher essa habilidade, aumente em 10 o limite do atributo de constituição.
-    <br>
-    <br>
-    <br>
-    <p><strong>Solitário (Nível:50):</strong></p>
-    Efeito: Pode iniciar treinos de qualquer habilidade sozinho, mas aumente os dados de 50xNº da classe para 70xNº da classe.
-    <br>
-    <br>
-    <br>
-    <p><strong>Super apto (Nível:50):</strong></p>
-    Efeito: Recebe +2 em todos os atributos e +5 em um atributo à escolha.
-    <br>
-    Requisito: Apto.
-    <br>
-    <br>
-    <p><strong>Multi perito (Nível:50):</strong></p>
-    Efeito: Você pode escolher uma outra maestria para receber os mesmos benefícios da sua maestria mais alta, excluindo os bônus de armas da maestria mais alta. (Nota: Remove os bõnus originais da maestria escolhida para receber os benefícios).
-    <br>
-    <br>
-    <br>
-    <p><strong>Velocidade nivelada (Nível:50):</strong></p>
-    Efeito: Aumenta a sua velocidade em 1 para cada nível que passar. Quando subir de classe, mantenha o bõnus do nível atual, mas não recebe mais bônus de velocidade até que passe do nível registrado por essa habilidade.
-    <br>
-    <br>
-    <br>
-    <br>
-    <p><strong>Influencer (Nível:50):</strong></p>
-    Efeito: Ao gastar uma ação padrão, você da uma dica de como atacar, resolver ou fazer algo para todos os aliados, fazer isso concede um bônus de +2 para cada 20 de Influência.
-    <br>
-    Requisito: Força unida e amiso avigo.
-    <br>
-    <br>
-    <p><strong>Combo superior (Nível:60):</strong></p>
-    Efeito: Combo ativa para qualquer rolagem de acerto, ademais números terminados em 6 também contam para a ativação de combo. Um número de vezes igual ao seu atributo de destreza/100 +1 (atributo divido por 100 +1) pode forçar um combo. Além disso, para cada acerto de combo cause 200 de dano verdadeiro extra e para cada erro soma-se +10 no acerto. (combo só pode ser ativado 5 vezes por turno).
-    <br>
-    Requisito: Combo.
-    <br>
-    <br>
-    <br>
-    <p><strong>Músculos hiperpesados (Nível:60):</strong></p>
-    Efeito: Sempre que causar dano com habilidades que usam força ou causar dano com maesria que possui o atributo base de força causam dano extra igual à 100% da força. Acertos críticos aplicam 1 stack de "Ficar roxo" no alvo.
-    <br>
-    Requisito: Músculos pesados.
-    <br>
-    <br>
-    <br>
-    <p><strong>Mira imprecisa (Nível:60):</strong></p>
-    Efeito: Sempre que rolar uma falha crítica quando atacar a distância, pode rerolar esse dado. Resultados iguais ou mnores que 10xNº da classe são considerados falhas críticas. Além disso, aumenta a taxa crítica em 15%.
-    <br>
-    Requisito: Preciso.
-    <br>
-    <br>
-    <br>
-    <p><strong>Mágicularidade majestosa (Nível:60):</strong></p>
-    Efeito: Quando for realizar qualquer teste que envolva o atributo de Inteligência, adicione metade do seu nível (fora de combate dobre este valor). Além disso, sempre que acertar um ataque mágico role 1d100, caso tire mais que 75 inflinge "Silêncio" por 1 turno, em caso de acerto crítico inflinja "Silêncio" sem a necessidade de um teste.
-    <br>
-    Requisito: Magicularidade.
-    <br>
-    <br>
-    <br>
-    <p><strong>Presença tirana (Nível:60):</strong></p>
-    Efeito: Aliados que fizerem o que você fala recuperam 500 de mana, e você ganha 250 de mana. Além disso, quando eles obtiverem sucesso na ação tanto você quanto o aliado ganharão 300 de vida máxima durante o combate, caso não esteja de vida cheia esse ganho apenas recuperará vida ao invés de somar na máxima.
-    <br>
-    Requisito: Líderança natural.
-    <br>
-    <br>
-    <br>
-    <p><strong>Suprimentos de mana (Nível:60):</strong></p>
-    Efeito: Todo ínicio de turno recupera 500 de mana. Pode ser usada em conjunto com "auxílio de mana".
-    <br>
-    Requisito: Auxílio de mana.
-    <br>
-    <br>
-    <br>
-    <p><strong>??????(Nível:60):</strong></p>
-    Efeito: No começo da batalha role 1d100 somando 2x o atributo de sorte, cause dano verdadeiro igual a 15x o valor do dado, além disso pode escolher 5 condições, numere-as e revele a numeração junto das condições, em seguida role 1d5, dependendo do valor o inimigo ganhará a condição correspondete por 1 turno. Essa habilidade pode ser usada em conjunto com a habilidade "sortudo".
-    <br>
-    Requisito: Sortudo.
-    <br>
-    <br>
-    <br>
-    <p><strong>Estilhaçar(Nível:60):</strong></p>
-    Efeito: Ao aplicar 1 stack de dano prolongado, aplique mais 1 stacks do mesmo efeito e aplique 1 stack de "Teimoso ao mesmo tempo".
-    <br>
-    Requisito: Debilitar.
-    <br>
-    <br>
-    <br>
-    <p><strong>Prevenção segura(Nível:60):</strong></p>
-    Efeito: Quando receber um ataque maior que a vida máxima, ganhe resolução por 1 turno e cure 25% da vida máxima. Esse efeito pode ser ativado 1 vez por batalha, o número de usos aumenta para 2 na classe 5 e para 3 na classe 6.
-    <br>
-    Requisito: "fagulha de vida" e "até o antepenúltimo".
-    <br>
-    <br>
-    <br>
-    <p><strong>Melhores benefícios maiores (Nível:60):</strong></p>
-    Efeito: Ao escolher essa habilidade, incremente os benefícios maiores recebidos, sendo os novos benefícios: +700 de vida, +700 de mana, +4 no limite de 1 atributo ou 200x Nível de C.c. Ao fazer isso você perde os benefícios que ganhou, mas recebe todos os benefícios novamante porém com os valores melhorados.
-    <br>
-    Requisito: Muitos benefícios maiores.
-    <br>
-    <br>
-    <p><strong>Resistente (Nível:60):</strong></p>
-    Efeito: Recebe +10% em todas as resistências ou +30% em uma resistência.
-    <br>
-    <br>
-    <br>
-    <p><strong>Arma super magiculosa (Nível:60):</strong></p>
-    Efeito: Quando acertar um ataque básico, cause dano etério extra igual à 40xNº da classe enquanto que atacar com a maestria de canalizador aumenta esse dano extra para 60xNº da classe. Além disso, esse dano extra recebe uma taxa crítica própria igual à metade da sua taxa crítica e um multiplicador crítico igual à 0,05x para cada 0,1x que você tenha.
-    <br>
-    Requisito: Arma magiculosa
-    <br>
-    <br>
-    <p><strong>Maestria veloz (Nível:60):</strong></p>
-    Efeito: Retire o bônus de atributo da maestria escolhida. Para cada 3 de velocidade que tenha, some +1 nessa maestria e para cada 100 de velocidade some +10 na maestria. 
-    <br>
-    Requisito: Passos ageis
-    <br>
-    <br>
-    <br>
-    <p><strong>Força da inflûencia (Nível:60):</strong></p>
-    Efeito: Ao gastar uma ação bônus e 400 de mana, aumente o dano de todas as habilidades e ataques de aliados em 50 para cada 25 de influência que tenha.
-    <br>
-    Requisito: Força unida e amiso avigo.
-    <br>
-    <br>
-    <p><strong>Começo ultrarápido (Nível:70):</strong></p>
-    Efeito: No começo da batalha, ganha +100 de velocidade, aumenta seu alcance em 1 passo, e além disso, caso não seja o primeiro a agir, ganha uma ação de reação extra no seu primeiro turno.
-    <br>
-    Requisito: Começo rápido.
-    <br>
-    <br>
-    <br>
-    <p><strong>Resiliência de ferro (Nível:70):</strong></p>
-    Efeito: Prepara o seu corpo para viver e regenerar-se sem o uso de mágias, ao chegar a 1 de vida pode continuar lutando e recupera 6.000 de vida ao longo de 3 turnos, recebendo 2.000 de vida por turno. Além disso se livra de qualquer efeito negativo e recebe "imunidade" e "resolução" por 1 turno.
-    <br>
-    Requisito: Resiliente.
-    <br>
-    <br>
-    <br>
-    <p><strong>Execução assassinada (Nível:70):</strong></p>
-    Efeito: Realizar a ação assassinato aplica 1 stack de "Resolução desativada" e além disso o efeito de "Oculto" não é removido. O acerto crítico do "Assassinato" é garantido e causa 10% da vida máxima do alvo como dano verdadeiro.
-    <br>
-    Requisito: Assassinato.
-    <br>
-    <br>
-    <br>
-    <p><strong>Mimetismo arcano (Nível:70):</strong></p>
-    Efeito: Se após a ação "Confundir senso" você receber "Oculto", recebe 5 stacks "Reflexão de efeito anormal" e quando chegar o seu turno, pode usar a última magia utilizada aumentando seu custo em 200xNº da classe e usando o seu atributo como base.
-    <br>
-    Requisito: Confundir espaço.
-    <br>
-    <br>
-    <br>
-    <p><strong>Cavalaria (Nível:70):</strong></p>
-    Efeito: Ao entrar em combate pode invocar uma criatura com até 2 classes abaixo da sua. Além disso, quando sua criatura tomar um dano fatal pela primeira vez, pode negar o dano e invocar outra criatura com metade da classe da criatura que sofreu o ataque (caso o número da classe seja ímpar, reduza a classe original em 1 e invoque uma criatura com metade do novo valor da classe). Pode ser ativado 1 vez por turno, e caso a criatura seja de classe 1, essa habilidade não pode ser ativada, essa habilidade também não pode ser ativada no mesmo turno que "Artilharia".
-    <br>
-    Requisito: Artilharia e Descartar.
-    <br>
-    <br>
-    <br>
-    <p><strong>Industria mágica (Nível:70):</strong></p>
-    Efeito: Sempre que receber mana, concede o mesmo valor como mana para todos os aliados, limitado em 500xNº da classe.
-    <br>
-    Requisito: Ganhos comunistas.
-    <br>
-    <br>
-    <br>
-    <p><strong>Troca condicional (Nível:70):</strong></p>
-    Efeito: Uma vez por turno, ao sofrer alguma condição, pode reduzir 1 turno ou 1 stack dessa condição (exceto se a condição durar 1 turno ou tiver 1 stack) e trocar por "Regenerando" na mesma quantidade.
-    <br>
-    <br>
-    <br>
-    <p><strong>Bruxaria (Nível:70):</strong></p>
-    Efeito: 1 vez por turno, ao já ter acertado o alvo pelo menos 1 vez na batalha, gaste uma ação comum para aplicar 1 stack de qualquer dano prolongado que possa aplicar. Essa ação não pode ser negada, nem esquivada e nem bloqueada.
-    <br>
-    Requisito: Estilhaçar, extra vazar.
-    <br>
-    <br>
-    <p><strong>Redução? (Nível:70):</strong></p>
-    Efeito: Sempre que receber dano, cure 100xNº da classe como vida. Podendo ativar 1 vez por turno para cada 100 de constituição que tenha.
-    <br>
-    Requisito: sangue na veia.
-    <br>
-    <br>
-    <p><strong>Foco em atributo (Nível:70):</strong></p>
-    Efeito: Escolhe um atribuo qualquer, exceto sorte e sanidade, todos os outros atributos são reduzidos em 2xNº da classe. Para cada 2 pontos totais que perder, aumente o atributo escolhido em 1 e para cada 5 atributos reduzidos, aumente o limite do atributo escolhido em 2.
-    <br>
-    Requisito: Super apto.
-    <br>
-    <br>
-    <p><strong>Regenerativo (Nível:70):</strong></p>
-    Efeito: Recebe regeneração igual à 100% do atributo de constituição.
-    <br>
-    <br>
-    <br>
-    <p><strong>Arma vinculada (Nível:70):</strong></p>
-    Efeito: Ao obter essa habilidade, reduza sua mana máxima em 25% e escolha uma de suas armas. A arma escolhida não pode sofrer com stacks de "Destruição" e você não pode sofrer com o engenho de "desarme", além disso o dano extra das habilidades "Arma magiculosa" e "Arma supermagiculosa" pode ter o elemento alterado para netherio ou etério novamante, o elemento alterado dura até ser trocado ou até o fim da batalha. Sempre que causar um acerto crítico com essa arma, cause dano verdadeiro igual à 50% da sua maestria, acertos críticos da habilidade "Arma supermagiculosa" se tornam verdadeiro e causam 25xNº da classe de dano extra.
-    <br>
-    Requisito: Arma supermagiculosa e perito.
-    <br>
-    <br>
-    <p><strong>Relampear faíscas (Nível:70):</strong></p>
-    Efeito: Aumente a sua velocidade em 20xNº da classe ao invés de 10xNº da classe. Habilidades que usam "Velocidade" como base recebem taxa crítica aumentada em 3% para cada 100 de velocidade que tenha, além disso elas causam dano verdadeiro extra igual à 250% do atributo de destreza.
-    <br>
-    Requisito: Passos ageis e faíscar
-    <br>
-    <br>
-    <br>
-    <p><strong>Influênciar ataque (Nível:70):</strong></p>
-    Efeito: Ao gastar uma ação livre e 1.000 de mana, você recebe 1 stack de "Protetor". O efeito se dissipa ao realizar um ataque, porém enquanto o mesmo durar, aumente a sua esquiva e bloqueio em 10 para cada 50 de influência que tenha e recebe cura igual à 100% do atributo de influência sempre que for alvo de 1 ataque.
-    <br>
-    Requisito: aura influênciadora
-    <br>
-    <br>
-    <p><strong>Arranhão (Nível:80):</strong></p>
-    Efeito: Quando errar um ataque, aplique 1 stack de "Sangramento", além disso, pode gastar uma ação bônus para aumentar o número de stacks aplicados em +1 para cada 100 de "Destreza" que tenha.
-    <br>
-    Requisito: 200 de destreza
-    <br>
-    <br>
-    <p><strong>Pura força (Nível:80):</strong></p>
-    Efeito: Ao realizar um ataque usando habilidades ou qualquer ataque que envolva o atributo de FOR como atributo príncipal, se o ataque for bloqueado, cause metade do dano original como dano verdadeiro, mas caso o ataque tenha sido um crítico, cause dano extra igual à 50xNº da classe.
-    <br>
-    <br>
-    <br>
-    <p><strong>Tiro duplo (triplo... shh) (Nível:80):</strong></p>
-    Efeito: Ao realizar uma ação de ataque básico à distância, pode dar um segundo tiro causando metade do dano orinal. Além disso, ao rolar um acerto de uma habilidade que use de alguma arma à distância, pode realizar um segundo ataque (ataque básico) que conta como ataque básico à distância e realizar um segundo ataque básico à distância com metade do dano. O segundo disparo possuí 20% de taxa crítica à mais. No final de seu turno, cause 200 de dano físico superior para cada ataque básico à distância acertado.
-    <br>
-    Requisíto: tiro enfeitado.
-    <br>
-    <br>
-    <br>
-    <p><strong>Disparo pertinente (Nível:80):</strong></p>
-    Efeito: Ao realizar um ataque básico baseado em mágia à distancia e caso o mesmo for bloqueado, ainda assim cause metade do dano, e recupere 250 de mana. Caso o ataque seja esquivado, recupere metade da mana gasta, além disso pode optar por usar novamente a mesma magia usando uma ação livre.
-    <br>
-    Requisíto: Mágicularidade magestosa.
-    <br>
-    <br>
-    <br>
-    <p><strong>Destruição imprudente (Nível:80):</strong></p>
-    Efeito: Quando uma invocação for morta ou "descartada", pode gastar mana igual a 300x o número da classe da criatura para explodir a criatura causando 100% da mana gasta como dano Astral ou Etério, além disso cause dano verdadeiro extra igual a 25% da vida máxima da criatura. Esse ataque tem acerto garantido para o primeiro dano, mas deve-se rolar acerto para o segundo dano. O alcance é curto e aumenta em 1 passo para cada 2 classe acima da classe 0 que a criatura for (ex: classe 0 e 1 tem alacance curto, classe 2,3 tem alcance médio...). 
-    <br>
-    Requisito: Descartar.
-    <br>
-    <br>
-    <br>
-    <p><strong>Conversão sobre foice e martelo (Nível:80):</strong></p>
-    Efeito: Sempre que um aliado receber mana, cure-o no mesmo valor, limitado pela metade da mana máxima do alvo.
-    <br>
-    Requisito: Conversão em conjunto.
-    <br>
-    <br>
-    <br>
-    <p><strong>Color swift (Nível:80):</strong></p>
-    Efeito: 1 vez por turno, ao aplicar 2 stacks ou mais de dano prolongado pode reduzir 1 stack e aplicar 1 stack de outro tipo de dano prolongado que possa aplicar nesse mesmo alvo.
-    <br>
-    Requisito: Troca condicional.
-    <br>
-    <br>
-    <br>
-    <p><strong>Vida prolongada (Nível:80):</strong></p>
-    Efeito: Quando receber qualquer número (exceto 1) de stacks de dano prolongado, reduza o mesmo à metade, e ganhe 200 de vida para cada stack reduzido por essa habilidade. Além disso, sempre que aplicar 1 stack de dano prolongado, receba 100 de vida e metade do dano causado por esses stacks retornam como escudo. Sempre que reduzir algum efeito recebido, gaste 250 de mana e aumente o custo em +250 para cada vez reduzir um efeito nesse mesmo turno.
-    <br>
-    Requisito: Estilhaçar e fulgor em juros.
-    <br>
-    <br>
-    <br>
-    <p><strong>Cura extra (Nível:80):</strong></p>
-    Efeito: Sempre que receber cura, receba cura adicional igual a 100xNº da classe +Constituição. Esse efeito só pode ser ativado 3 vezes por turno.
-    <br>
-    Requisito: Sangue na veia e Regenerativo.
-    <br>
-    <br>
-    <br>
-    <p><strong>Runeiro (Nível:80):</strong></p>
-    Efeito: Quando completar qualquer masmorra e ganhar alguma runa, você ganha 1 runa extra, essa runa extra será nomeada com um nome aleatório.
-    <br>
-    Requisito: Aventureiro rúnico
-    <br>
-    <br>
-    <p><strong>Super resistente (Nível:80):</strong></p>
-    Efeito: Recebe +15% em todas as resistências e +50% em uma à sua escolha. Além disso, quando receber dano, caso seja o primeiro acerto recebido e um elemento, negue completamente o dano.
-    <br>
-    Requisito: Resistente.
-    <br>
-    <br>
-    <p><strong>Maestria habilidosa(Nível:80):</strong></p>
-    Efeito: Uma vez por turno, quando acertar uma habilidade que use maestria como base, aumente o multiplicador da habilidade 150%. Em casos de acerto crítico com essa habilidade, nesse caso terá direito de realizar um ataque básico extra causando metade do dano base. Se a sua maestria for uma à distância, nesse caso a habilidade recebe +50% no multiplicador ao invés de 150%, porém a taxa crítica é aumentada em 20%.
-    <br>
-    Requisito: Arma supermagiculosa, perito e arma carregadora.
-    <br>
-    <br>
-    <p><strong>Crítico veloz (Nível:80):</strong></p>
-    Efeito: Quando realizar um acerto crítico, pode realizar um segundo ataque básico causando a metade do dano, podendo dar um máximo de 1 ataque básico extra para cada 200 de velocidade que tenha, cada ataque básico consecutivo aumenta a taxa crítico em 10%.
-    <br>
-    Requisito: Passos ageis e combo.
-    <br>
-    <br>
-    <br>
-    <p><strong>Influência da mana (Nível:80):</strong></p>
-    Efeito: Ao gastar uma bônus, pode gastar qualquer quantia de mana desejada até um máximo de 1.000xNº da classe. A mana gasta pode ser distribuida para todos os aliados em qualquer proporção, e fazer isso lhe concede metade da mana gasta como escudo.
-    <br>
-    Requisito: aura influênciadora e industria mágica
-    <br>
-    <br>
-    <p><strong>Agilidade nos pés (Nível:90):</strong></p>
-    Efeito: Pode realizar a ação investida rápida 1 vez por turno, mesmo que seu alvo não tenha tentado fugir. Além disso, inflinja "pressão" ao alvo pelo resto do seu turno mesmo que erre o ataque.
-    <br>
-    Requisito: Investida rápida.
-    <br>
-    <br>
-    <p><strong>Aparar (Nível:90):</strong></p>
-    Efeito: Sempre que realizar um ataque básico depois de um inimigo ter errado um ataque, esse ataque básico causará dano adicional igual 50%xNºda classe do atributo de constituição. Acertar esse ataque básico também remove 2 stacks de qualquer efeito negativo que o ataque bloqueado tenha dado e os aplica no alvo do seu ataque básico.
-    <br>
-    Requisito: Luta engajada e resiliente.
-    <br>
-    <br>
-    <p><strong>Muralha (Nível:90):</strong></p>
-    Efeito: No começo da batalha, ganha um escudo igual 40% da vida máxima.
-    <br>
-    Requisito: Guarda alta.
-    <br>
-    <br>
-    <br>
-    <p><strong>Utamo gran vita (Nível:90):</strong></p>
-    Efeito: No começo da batalha, ganha um escudo igual a 40%.
-    <br>
-    Requisito: Utamo vita.
-    <br>
-    <br>
-    <br>
-    <p><strong>Domador universal (Nível:90):</strong></p>
-    Efeito: Pode domar criaturas derrotadas e torna-las suas ao estabelecer um vínculo de alguma forma. Ao domar criaturas pode escolher 1 para ser sua favorita, ela não conta para o limite máximo de criaturas que pode ter, mas não pode ser alvo da habilidade "descartar", além disso essa criatura começa a batalha com um escudo igual ao seu e pode aprender qualquer técnica que você tenha, desde que cumpra os requisitos (demora 1 mesa para cada 2 ranks que a habilidade for, também é possível reduzir o rank de uma habilidade para que ele possa aprender mais rápido).
-    <br>
-    Requisíto: Líder nato.
-    <br>
-    <br>
-    <br>
-    <p><strong>Lados em dobro (Nível:90):</strong></p>
-    Efeito: Uma vez por turno, ao receber cura de fontes que não seja sua própria regeneração, cause dano verdadeiro ao oponente igual a 25% desse valor + metade do seu escudo como dano etério. Além disso, qualquer sobre-cura terá seu valor dividido pela metade e receberá escudo no lugar.
-    <br>
-    Requisito: Alternatividade.
-    <br>
-    <br>
-    <br>
-    <p><strong>Precisão de improbabilidade (Nível:90):</strong></p>
-    Efeito: 3 vezes por batalha, quando for rolar um dado de acerto ou para esquiva/bloqueio, pode escolher até 10 números para cada classe que você seja. Caso caia 1 desses números que escolheu, pode rolar o dado novamente, os números devem ser escritos no chat geral ou no chat do Roll20. Para dados que não sejam os escritos acima, pode escolher 1 número por classe sua para cada 100 no valor máximo do dado.
-    <br>
-    Requisito: ??????.
-    <br>
-    <br>
-    <br>
-    <p><strong>Transferência de pragas (Nível:90):</strong></p>
-    Efeito: 1 vez por turno, quando houver dano prolongado em 1 alvo, pode transferir quantos stacks quiser para outro alvo, além disso cause dano do mesmo tipo que o dano prolongado igual a 100% da maestria nos 2 alvos para cada stack transferido. Quando houver alvos sem efeitos de dano dano prolongado no momento que usar essa habilidade, cause "estigma" aos alvos instantâneamente.
-    <br>
-    <br>
-    <br>
-    <p><strong>Até o penúltimo (Nível:90):</strong></p>
-    Efeito: Recebe a possibilidade de tentar a "fagulha da vida" uma vez à mais, podendo totalizar 3 rolagens. Recebe +2.000 de vida e +5% em todas as resistências, dobrando o valor ganho de resistência caso a resistência aumentada seja negativa. Além disso, efeitos de resolução não podem ser removidos.
-    <br>
-    Requisito: até o antepenúltimo e cura extra.
-    <br>
-    <br>
-    <br>
-    <p><strong>Recompensa árdua (Nível:90):</strong></p>
-    Efeito: Uma vez por semana, ao concluir um andar ancestral da masmorra, receba 1 runa 7 estrelas adicional que virá nomeada, além de recebe 500xNº da classe de C.c. Ao pegar essa habildiade, receba +5.000 de vida ou mana.
-    <br>
-    Requisito: Aventureiro rúnico
-    <br>
-    <br>
-    <p><strong>Skill up (Nível:90):</strong></p>
-    Efeito: Ao receber essa habilidade, pode escolher até 3 habilidades para evoluir 1 rank. As habilidades escolhidas devem ser no máximo rank S.
-    <br>
-    <br>
-    <br>
-    <p><strong>Maestria básica (Nível:90):</strong></p>
-    Efeito: Seus ataques básicos são considerados de elemento superior e aplicam 1 stack de qualquer efeito de dano prolongado que possa aplicar (o número de stacks aplicados não pode mudar e o stack deve ser escolhido antes do combate e não pode ser alterado até o final dese). Sempre que acertar um ataque básico recupere mana igual à 100% do atributo base da sua maestria mais alta (Esse benefício soma com "Arma carregadora").
-    <br>
-    Requisito: Arma carregadora, perito
-    <br>
-    <br>
-    <p><strong>Velocidade máxima (Nível:90):</strong></p>
-    Efeito: Uma vez á cada 3 turnos, você aumenta sua velocidade em 20xNº da classe até o final do seu turno. Fazer isso gasta uma ação bônus. O dano dos seus ataques básicos e todas as habilidades causam 50% da velocidade como dano verdadeiro extra enquanto tiver com a habilidade ativa.
-    <br>
-    Requisito: Relâmpiar faísca.
-    <br>
-    <br>
-    <br>
-    <p><strong>Idol (Nível:90):</strong></p>
-    Efeito: Quando usar a habilidade "Força da influência", reduza o custo de todas as habilidades de aliados em 250 e aumente. "Força da influência" pode ser usada como ação de movimento ao invés de ação Bônus.
-    <br>
-    Requisito: aura influênciadora e força da influência
-    <br>
-    <br>
-</p>
-<hr/>
-<br>
-<p class="mec"><strong>Habilidades celestes:</strong></p>
-<br>
-<br>
-<p>As habilidades celestes são obtidas através da ascensão, ao subir 1 nível à cima de 90 e escolher pegar 1 habilidade, são elas:
-    <br><br>
-<p><strong>Double click:</strong></p>
-Efeito: Uma vez por turno, quando acertar um ataque, inflinja "pressão" por 1 turno. Além disso toda vez que acertar 1 alvo sobre pressão cause 300 de dano verdadeiro extra.
-<br>
-    Requisito: Combo superior.
-<br>
-<br>
-<br>
-<p><strong>Defesa é o melhor ataque:</strong></p>
-Efeito: Soma-se metade do bloqueio à sua maestria. Além disso, ganha +3 no bloqueio para cada classe que esteja.
-<br>
-  Requisito: Músculos hiperpesados, muralha ou aparar. 
-<br>
-<br>
-<br>
-<p><strong>Precisão acrítica:</strong></p>
-Efeito: Para cada 2 em destreza aumente a taxa de falha crítica de um dado em 1. Além disso, sempre que tirar uma falha crítica em 1 dado cause 200 de dano verdadeiro em um alvo à escolha.
-<br>
-    Requisito: Precisão de improbabilidade ou mira imprecisa.
-<br>
-<br>
-<br>
-<p><strong>Reciclagem:</strong></p>
-Efeito: Quando causar qualquer tipo de dano ou cura através de uma habilidade, pode escolher reduzir o dano ou cura à metade, recupere o mesmo valor em mana. Além disso, quando causarem dano à você usando magia, recupere 250 de mana.
-<br>
-    Requisito: magícularidade.
-<br>
-<br>
-<br>
-<p><strong>Todos por 1:</strong></p>
-Efeito: 1 vez por turno, pode retirar a vida de uma criatura e dar o mesmo valor em vida para outra criatura. Além disso, quando uma criatura morrer aumenta todo o dano causado por suas criaturas em 200 durante 1 turno (esse bônus pode ser stackado, mas não pode ter sua duração aumentada), ademais cada criatura pode reduzir completamente o custo de uma magia de rank A e reduzir 200 de mana para cada rank à cima de A. 
-<br>
-    Requisito: destruição imprudente.
-<br>
-<br>
-<br>
-<p><strong>Cura externa:</strong></p>
-Efeito: Quando receber cura, receba 250 +100% da constituição de armadura.
-<br>
-    Requisito: muralha ou utamo gran vita ou conversão sobre foice e martelo.
-<br>
-<br>
-<br>
-<p><strong>Probalidade à mais:</strong></p>
-Efeito: Sempre que receber dinheiro, receba 1.000 de C.c extra.
-<br>
-    Requisito: Rico?.
-<br>
-<br>
-<br>
-<p><strong>Danificar ferimento:</strong></p>
-Efeito: 1 vez por turno, pode remover até 5 stacks de alguma coisa, cause dano verdadeiro igual a 100 vezes o número de stacks retirados, além disso quando retirar stacks usando essa habilidade, negue qualquer cura durante o próximo turno do oponente.
-<br>
-    Requisito: bruxaria.
-<br>
-<br>
-<br>
-<p><strong>Até o último:</strong></p>
-Efeito: "Fagulha de vida" pode ser ativado até 4 vezes por batalha. Recebe um adcional de +1.000 para cada 50 no atributo de força como vida, além disso pode escolher 1 resistência negativa e transforme-a em 20%. Ademais, ao receber resolução cure 500 +200% da força.
-<br>
-Requisito: até o penúltimo.
-<br>
-<br>
-<br>
-<p><strong>3 pontos:</strong></p>
-Efeito: O número de investidas rápidas que podem ser usadas por turno aumenta para 3 três. Para cada investida rápida realizada concede +3 no acerto. Outrora, apenas 10 investidas rápidas podem ser feitas durante o combate. 
-<br>
-    Requisito: agilidade nos pés.
-<br>
-<br>
-<br>
-<p><strong>Blindão:</strong></p>
-Efeito: Torna-se imúne a um elemento, além disso sempre que receber dano desse elemento, pode contra-atacar usando 1 ataque básico (esse ataque soma-se com a habilidade "Luta engajada").
-<br>
-    Requisito: resiliência de ferro.
-<br>
-<br>
-<br>
-<p><strong>Exagero:</strong></p>
-Efeito: Quando realizar 2 ou mais ataques básicos à distância, escolha 1 dos efeitos abaixo para adicionar nos próximos ataques básicos à distância.
-<br>
-<br>
-- Esse disparo foi quase um crítico. Cause dano extra igual à 50% da maestria.
-<br>
-- Esse disparo fez o necessário. Reduza o dano à metade, o dano desse disparo torna-se verdadeiro e ignora escudos.
-<br>
-- Esse disparo foi de raspão. Mesmo não acertando, aplique 1 stacks de sangramento e cause 100 de dano verdadeiro +50 para cada stack de "Sangramento", "Ferida ebânea" ou "Pétala sangrenta".
-<br>
-<br>
-    Requisito: tiro duplo.
-<br>
-<br>
-<p><strong>Arquimago:</strong></p>
-Efeito: Ao gastar qualquer quantia de mana, cause dano etério igual a metade desse valor à 1 criatura. Além disso, sempre que usar mágias, recebe 1 stack de "tempestade arcana".
-<br>
-    Requisito:30.000 de  mana máxima (base).
-<br>
-<br>
-<br>
-<p><strong>Força em conjunto:</strong></p>
-Efeito: Ao gastar 1 ação comum, pode causar 200 de dano de qualquer elemento (exceto verdadeiro), para cada criatura sua invocada. Além diso, metade desse dano é convertido em escudo para qualquer aliado, ou você mesmo.
-<br>
-Requisito: Força unida
-<br>
-<br>
-<p><strong>minha vida? Nossa vida!:</strong></p>
-Efeito: 1 vez por turno, ao receber dano cure 1 aliado pela metade do valor. Sempre que sofrer um ataque ganhe 1 stack de "emergência". (habildiades de "multihit" contam como apenas 1 acerto).
-<br>
-Requisito: Conversão sobre foice e martelo.
-<br>
-<br>
-<br>
-<p><strong>Super pressão de mana:</strong></p>
-Efeito: Aumenta o número de vezes que pode usar supressão de mana para 5. Ao causar dano de supressão de mana, você também aplica 1 stack de "inflação". Sempre que 1 alvo com "inflação" usar alguma habilidade, ganhe 400 de mana.
-<br>
-Requisito: Supressão de mana.
-<br>
-<br>
-<br>
-<p><strong>Masoquismo:</strong></p>
-Efeito: Sempre que receber dano, aplique 1 stack de "ferida ebânea" ou "sangramento" à sí mesmo. 1 vez por batalha, quando sofrer algum golpe fatal, anule esse dano e receba 250 de vida para cada stack de "sangramento" que tinha ou 500 de vida para cada stack de "ferida ebânea" que tinha e além disso aplique metade desses stacks ao alvo que lhe acertou. Caso tenha Mais de 5 stacks de sangramento no momento de ativação da habilidade, cause 200xNº de stacks de sangramento no alvo após essa habilidade como dano verdadeiro. Caso possua mais de 5 stacks de ferida ebânea, cure 200 de vida extra para cada stack de ferida ebânea que alvo ganhar, além disso cause dano verdadeiro extra igual a metade da cura recebida pelo uso desta habilidade.
-<br>
-    Requisito: transferência de praga.
-<br>
-<br>
-<br>
-<p><strong>Cura extra plus:</strong></p>
-Efeito: Aumenta o limite de vezes que as habilidades "redução?" e "cura extra" podem ativar por turno em 1. Sempre que ativar "cura extra" 3 vezes, pode remover 1 stack de algum feito maléfico de você mesmo, além disso, quando receber resolução também receberá imúnidade por 1 turno. Durante o combate, pode trocar toda a cura recebida pelas suas próprias habilidades terrestres e habilidades celestes, para ativar o seguinte efeito: Sempre que for receber vida das habilidades terrestres ou celestes, em vez disso, cause 500 de dano verdadeiro a um alvo a escolha.
-<br>
-    Requisito: Redução? , cura extra e fagulha de vida.
-<br>
-<br>
-<br>
-<p><strong>Nível máximo aumentado:</strong></p>
-    Efeito: Ao pegar essa habilidade, aumenta o limite de todas os seus atributos em 10 e aumenta o limite de maestria em 50. Além disso, sempre que gastar receber um nível astral, recebe 1 ponto de atributo para distribuir e 250 de vida e mana, podendo receber +25 pontos e +5.000 de vida e mana.
-    <br>
-    Requisito: Foco em atributo
-    <br>
-    <br>
-    <p><strong>Super skill up:</strong></p>
-    Efeito: Ao receber essa habilidade, pode escolher 1 habilidade instintiva ou única para evoluir, fazer isso reduz o rank de todas as suas habilidades de rank SS, S, A, B, C em 1 rank.
-    <br>
-    <br>
-    <br>
-    <p><strong>Maestria avançada:</strong></p>
-    Efeito: Todos os seus ataques que usam maestria como base causam 50xNº da classe de dano verdadeiro extra e ataques básicos causam 100xNº da classe de dano verdadeiro extra. Sempre que acertar uma habilidade, aumente o dano de seus ataques básicos em 100 até o final do turno enquanto que acertar ataques básicos aumentam o dano de todas as suas habilidades com maestria como base em 250.
-    <br>
-    Requisito: Maestria básica
-    <br>
-    <br>
-    <p><strong>Flashness:</strong></p>
-    Efeito: Para cada 20 de velocidade que tenha, reduza o número necessessário para critar no dado base em 10. Sempre que um dado tiver um valor crítico, recebe 1 stack de "Veloz". Remova todos os stacks de veloz ao fim do seu turno e cause 200 +25% da velocidade de dano verdadeiro para cada stack de "veloz" retirado em todos os inimigos. 
-    <br>
-    Requisito: Velocidade máxima.
-    <br>
-    <br>
-    <br>
-    <p><strong>Super star:</strong></p>
-    Efeito: Quando entrar em combate, aumente o acerto e esquiva de todos os aliados em 25 e reduza 5 desse bônus à cada turno que passar. Uma vez por turno ao usar uma ação bônus, pode gastar 2.000 de mana para fornecer esse benefício novamente. Quando um inimigo for acertado, poe usar uma reação para forçar o aliado à dar um ataque básicco nesse inimigo, isso gasta 500 de mana.
-    <br>
-    Requisito: Idol
-    <br>
-    <br>
-    </fieldset>
+  </div>
+</fieldset>
 </body>
+
 </html>
